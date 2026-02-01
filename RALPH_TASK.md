@@ -25,19 +25,20 @@ test_command: "python app.py"
 
 ### Phase 1: 环境搭建
 
-2. [ ] 创建项目目录结构：`src/adapters/`, `src/repositories/`, `src/services/`, `src/components/`, `config/`, `data/raw/`，每个目录下创建 `__init__.py`
+2. [x] 创建项目目录结构：`src/adapters/`, `src/repositories/`, `src/services/`, `src/components/`, `config/`, `data/raw/`，每个目录下创建 `__init__.py`
    - 验收：所有目录存在且包含 `__init__.py`
 
-3. [ ] 创建 `requirements.txt`，包含 dash, plotly, pandas, requests, pyyaml
+3. [x] 创建 `requirements.txt`，包含 dash, plotly, pandas, requests, pyyaml
    - 验收：`pip install -r requirements.txt` 安装成功
 
 4. [ ] 创建 `config/settings.py`，实现 `get_api_key()` 函数读取项目根目录的 `FRED_API_KEY` 文件内容
    - 验收：`python -c "from config.settings import get_api_key; print(get_api_key())"` 输出 API Key
+   - 注：settings.py 已创建，等待 FRED_API_KEY 文件填入 API Key
 
-5. [ ] 创建 `config/series_config.yaml`，配置 6 个数据系列：SP500, DFEDTARU, DFEDTARL, DGS1, DGS3, DGS10，每个包含 id, name, fred_series_id, category, color
+5. [x] 创建 `config/series_config.yaml`，配置 6 个数据系列：SP500, DFEDTARU, DFEDTARL, DGS1, DGS3, DGS10，每个包含 id, name, fred_series_id, category, color
    - 验收：文件存在且 YAML 格式正确
 
-6. [ ] 在 `config/settings.py` 中添加 `load_series_config()` 函数，解析 series_config.yaml 返回系列列表
+6. [x] 在 `config/settings.py` 中添加 `load_series_config()` 函数，解析 series_config.yaml 返回系列列表
    - 验收：`python -c "from config.settings import load_series_config; print(load_series_config())"` 输出 6 个系列配置
 
 ### Phase 2: 存储仓库层

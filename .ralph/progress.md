@@ -24,3 +24,8 @@ This is how Ralph maintains continuity across iterations.
 
 ### 2026-02-01 16:15:31
 **Session 2 started** (model: opus-4.5-thinking)
+
+**Progress**:
+- Found `scripts/test_fred_api.py` already exists (created in Session 1)
+- BLOCKER: `FRED_API_KEY` file is empty - need user to add API key
+- Waiting for API key to verify criterion 1
