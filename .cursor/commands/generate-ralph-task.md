@@ -67,6 +67,16 @@ test_command: "[测试命令]"
 
 ---
 
+## Secrets
+
+所有 API Key、密钥、凭证等敏感信息都存放在项目根目录的对应文件中（已 gitignore）：
+- FRED API Key → `FRED_API_KEY` 文件
+- 其他 secrets → 查看项目根目录或 `.env` 文件
+
+**不要硬编码任何密钥，始终从文件或环境变量读取。**
+
+---
+
 ## Ralph Instructions
 
 1. Work on the next incomplete criterion (marked [ ])
