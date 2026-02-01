@@ -43,23 +43,23 @@ test_command: "python app.py"
 
 ### Phase 2: 存储仓库层
 
-7. [ ] 创建 `src/repositories/base.py`，定义 `SeriesRepository` 抽象基类，包含抽象方法：`read(series_id, start_date, end_date)`, `write(series_id, data, mode)`, `exists(series_id)`, `get_date_range(series_id)`
+7. [x] 创建 `src/repositories/base.py`，定义 `SeriesRepository` 抽象基类，包含抽象方法：`read(series_id, start_date, end_date)`, `write(series_id, data, mode)`, `exists(series_id)`, `get_date_range(series_id)`
    - 验收：文件存在，类继承 ABC
 
-8. [ ] 创建 `src/repositories/base.py` 中的 `MetadataRepository` 抽象基类，包含抽象方法：`get(series_id)`, `update(series_id, updates)`, `get_all()`
+8. [x] 创建 `src/repositories/base.py` 中的 `MetadataRepository` 抽象基类，包含抽象方法：`get(series_id)`, `update(series_id, updates)`, `get_all()`
    - 验收：文件存在，类继承 ABC
 
-9. [ ] 创建 `src/repositories/csv_repository.py`，实现 `CSVSeriesRepository` 类：
+9. [x] 创建 `src/repositories/csv_repository.py`，实现 `CSVSeriesRepository` 类：
    - `read()`: 从 `data/raw/{series_id}.csv` 读取数据，支持日期范围过滤
    - `write()`: 写入 CSV，支持 replace/append 模式
    - `exists()`: 检查文件是否存在
    - `get_date_range()`: 返回数据的起止日期
    - 验收：`python -m pytest tests/test_csv_repository.py -v` 通过
 
-10. [ ] 创建 `src/repositories/csv_repository.py` 中的 `JSONMetadataRepository` 类，操作 `data/metadata.json` 文件
+10. [x] 创建 `src/repositories/csv_repository.py` 中的 `JSONMetadataRepository` 类，操作 `data/metadata.json` 文件
     - 验收：能读写 metadata.json
 
-11. [ ] 创建 `tests/test_csv_repository.py`，测试 CSVSeriesRepository 的 write→read 往返、append 模式、get_date_range
+11. [x] 创建 `tests/test_csv_repository.py`，测试 CSVSeriesRepository 的 write→read 往返、append 模式、get_date_range
     - 验收：测试文件存在且可运行
 
 ### Phase 3: FRED 适配器
