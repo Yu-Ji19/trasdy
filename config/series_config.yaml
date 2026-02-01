@@ -1,0 +1,39 @@
+# Series configuration for Trasdy MVP
+# Each series defines a FRED data source with display properties
+
+series:
+  - id: sp500
+    name: "S&P 500"
+    fred_series_id: SP500
+    category: equity
+    color: "#1f77b4"
+    
+  - id: fed_upper
+    name: "Fed Funds Upper"
+    fred_series_id: DFEDTARU
+    category: rates
+    color: "#ff7f0e"
+    
+  - id: fed_lower
+    name: "Fed Funds Lower"
+    fred_series_id: DFEDTARL
+    category: rates
+    color: "#2ca02c"
+    
+  - id: treasury_1y
+    name: "1-Year Treasury"
+    fred_series_id: DGS1
+    category: rates
+    color: "#d62728"
+    
+  - id: treasury_3y
+    name: "3-Year Treasury"
+    fred_series_id: DGS3
+    category: rates
+    color: "#9467bd"
+    
+  - id: treasury_10y
+    name: "10-Year Treasury"
+    fred_series_id: DGS10
+    category: rates
+    color: "#8c564b"

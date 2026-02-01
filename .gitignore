@@ -1,0 +1,23 @@
+# Ralph config (may contain API key)
+.cursor/ralph-config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Data (too large to commit)
+data/raw/*.csv
+data/metadata.json
