@@ -3,15 +3,15 @@
 # DO NOT EDIT - regenerated on task file change
 
 source_file: RALPH_TASK.md
-source_mtime: 1769934199
-generated_at: 2026-02-01T08:24:16Z
+source_mtime: 1769934398
+generated_at: 2026-02-01T08:28:42Z
 
 tasks:
   - id: "line_23"
     line_number: 23
     status: pending
     parallel_group: 999999
-    description: 创建 `scripts/test_fred_api.py` 脚本，读取 `FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
+    description: 创建 `scripts/test_fred_api.py` 脚本，读取 `secrets/FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
     indent_level: 0
     raw_marker: 1.
   - id: "line_28"
@@ -32,7 +32,7 @@ tasks:
     line_number: 34
     status: pending
     parallel_group: 999999
-    description: 创建 `config/settings.py`，实现 `get_api_key()` 函数读取项目根目录的 `FRED_API_KEY` 文件内容
+    description: 创建 `config/settings.py`，实现 `get_api_key()` 函数读取 `secrets/FRED_API_KEY` 文件内容
     indent_level: 0
     raw_marker: 4.
   - id: "line_38"
