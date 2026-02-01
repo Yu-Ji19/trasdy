@@ -20,7 +20,7 @@ test_command: "python app.py"
 
 ### Phase 0: 前置验证
 
-1. [ ] 创建 `scripts/test_fred_api.py` 脚本，读取 `secrets/FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
+1. [x] 创建 `scripts/test_fred_api.py` 脚本，读取 `secrets/FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
    - 验收：运行 `python scripts/test_fred_api.py` 输出日期和数值，无报错
 
 ### Phase 1: 环境搭建
@@ -31,9 +31,8 @@ test_command: "python app.py"
 3. [x] 创建 `requirements.txt`，包含 dash, plotly, pandas, requests, pyyaml
    - 验收：`pip install -r requirements.txt` 安装成功
 
-4. [ ] 创建 `config/settings.py`，实现 `get_api_key()` 函数读取 `secrets/FRED_API_KEY` 文件内容
+4. [x] 创建 `config/settings.py`，实现 `get_api_key()` 函数读取 `secrets/FRED_API_KEY` 文件内容
    - 验收：`python -c "from config.settings import get_api_key; print(get_api_key())"` 输出 API Key
-   - 注：settings.py 已创建，等待 secrets/FRED_API_KEY 文件填入 API Key
 
 5. [x] 创建 `config/series_config.yaml`，配置 6 个数据系列：SP500, DFEDTARU, DFEDTARL, DGS1, DGS3, DGS10，每个包含 id, name, fred_series_id, category, color
    - 验收：文件存在且 YAML 格式正确
@@ -67,13 +66,12 @@ test_command: "python app.py"
 12. [x] 创建 `src/adapters/base.py`，定义 `DataSourceAdapter` 抽象基类，包含抽象方法：`fetch(series_id, start_date, end_date)`, `get_metadata(series_id)`
     - 验收：文件存在，类继承 ABC
 
-13. [ ] 创建 `src/adapters/fred_adapter.py`，实现 `FREDAdapter` 类：
+13. [x] 创建 `src/adapters/fred_adapter.py`，实现 `FREDAdapter` 类：
     - 使用 `config.settings.get_api_key()` 获取 API Key
     - `fetch()`: 调用 FRED API，返回 DataFrame(columns=['date','value'])
     - 处理缺失值 "." 转为跳过该行
     - 处理 value 字符串转 float
     - 验收：`python -c "from src.adapters.fred_adapter import FREDAdapter; print(FREDAdapter().fetch('SP500','2025-01-01','2025-01-10'))"` 输出 DataFrame
-    - 注：代码已创建，等待 FRED_API_KEY 验证
 
 ### Phase 4: 数据服务层
 
@@ -134,10 +132,10 @@ test_command: "python app.py"
 
 ### Phase 7: 集成验证
 
-28. [ ] 首次启动完整流程验证：删除 `data/raw/*.csv` 和 `data/metadata.json`，运行 `python app.py`，确认自动拉取 6 个系列并显示图表
+28. [x] 首次启动完整流程验证：删除 `data/raw/*.csv` 和 `data/metadata.json`，运行 `python app.py`，确认自动拉取 6 个系列并显示图表
     - 验收：6 个 CSV 文件生成，图表显示 6 条线
 
-29. [ ] 增量更新验证：点击更新按钮，确认只拉取新数据追加
+29. [x] 增量更新验证：点击更新按钮，确认只拉取新数据追加
     - 验收：metadata.json 的 data_end_date 更新为今天
 
 ---

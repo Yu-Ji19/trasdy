@@ -147,3 +147,15 @@ Get a free API key from: https://fred.stlouisfed.org/docs/api/api_key.html
 
 ### 2026-02-01 16:39:35
 **Session 1 started** (model: opus-4.5-thinking)
+
+**COMPLETED**:
+- Added FRED API key to secrets/FRED_API_KEY
+- Fixed FREDAdapter.fetch() to accept both date objects and string dates
+- Verified all 5 remaining criteria:
+  - Criterion 1: test_fred_api.py - ✅ Fetches SP500 data
+  - Criterion 4: get_api_key() - ✅ Returns API key
+  - Criterion 13: FREDAdapter - ✅ Returns DataFrame with correct columns
+  - Criterion 28: Integration test - ✅ All 6 CSV files generated, 62,000+ records
+  - Criterion 29: Incremental update - ✅ metadata.json updated correctly
+
+**All 29 criteria now complete. Task finished.**

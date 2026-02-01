@@ -39,8 +39,8 @@ class FREDAdapter(DataSourceAdapter):
         
         Args:
             series_id: FRED series ID (e.g., 'SP500', 'DGS10')
-            start_date: Optional start date for the data
-            end_date: Optional end date for the data
+            start_date: Optional start date for the data (date object or 'YYYY-MM-DD' string)
+            end_date: Optional end date for the data (date object or 'YYYY-MM-DD' string)
             
         Returns:
             DataFrame with columns ['date', 'value']
@@ -53,9 +53,10 @@ class FREDAdapter(DataSourceAdapter):
         }
         
         if start_date:
-            params["observation_start"] = start_date.isoformat()
+            # Handle both date objects and string inputs
+            params["observation_start"] = start_date.isoformat() if hasattr(start_date, 'isoformat') else start_date
         if end_date:
-            params["observation_end"] = end_date.isoformat()
+            params["observation_end"] = end_date.isoformat() if hasattr(end_date, 'isoformat') else end_date
         
         response = requests.get(url, params=params)
         response.raise_for_status()
