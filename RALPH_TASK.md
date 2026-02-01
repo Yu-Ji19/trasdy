@@ -64,7 +64,7 @@ test_command: "python app.py"
 
 ### Phase 3: FRED 适配器
 
-12. [ ] 创建 `src/adapters/base.py`，定义 `DataSourceAdapter` 抽象基类，包含抽象方法：`fetch(series_id, start_date, end_date)`, `get_metadata(series_id)`
+12. [x] 创建 `src/adapters/base.py`，定义 `DataSourceAdapter` 抽象基类，包含抽象方法：`fetch(series_id, start_date, end_date)`, `get_metadata(series_id)`
     - 验收：文件存在，类继承 ABC
 
 13. [ ] 创建 `src/adapters/fred_adapter.py`，实现 `FREDAdapter` 类：
@@ -73,32 +73,33 @@ test_command: "python app.py"
     - 处理缺失值 "." 转为跳过该行
     - 处理 value 字符串转 float
     - 验收：`python -c "from src.adapters.fred_adapter import FREDAdapter; print(FREDAdapter().fetch('SP500','2025-01-01','2025-01-10'))"` 输出 DataFrame
+    - 注：代码已创建，等待 FRED_API_KEY 验证
 
 ### Phase 4: 数据服务层
 
-14. [ ] 创建 `src/services/data_service.py`，实现 `DataService` 类，构造函数接收 `SeriesRepository` 和 `MetadataRepository`
+14. [x] 创建 `src/services/data_service.py`，实现 `DataService` 类，构造函数接收 `SeriesRepository` 和 `MetadataRepository`
     - 验收：类存在，使用依赖注入
 
-15. [ ] 实现 `DataService.get_series(series_ids, start_date, end_date)` 方法：检查本地是否存在数据，存在则读取 CSV，不存在则调用适配器拉取并保存
+15. [x] 实现 `DataService.get_series(series_ids, start_date, end_date)` 方法：检查本地是否存在数据，存在则读取 CSV，不存在则调用适配器拉取并保存
     - 验收：首次调用创建 CSV，再次调用直接读取本地
 
-16. [ ] 实现 `DataService.refresh_data(series_ids, mode)` 方法：
+16. [x] 实现 `DataService.refresh_data(series_ids, mode)` 方法：
     - mode=FULL: 全量拉取覆盖
     - mode=INCREMENTAL: 从 metadata.data_end_date + 1 天开始拉取，追加到 CSV
     - 验收：增量模式只拉取新数据
 
-17. [ ] 实现元数据自动更新：每次 refresh_data 后更新 metadata.json 的 `last_updated` 和 `data_end_date` 字段
+17. [x] 实现元数据自动更新：每次 refresh_data 后更新 metadata.json 的 `last_updated` 和 `data_end_date` 字段
     - 验收：查看 metadata.json 字段已更新
 
 ### Phase 5: 数据转换服务
 
-18. [ ] 创建 `src/services/transform.py`，实现 `normalize_to_scale(series, base_value)` 函数：将序列归一化为以 base_value 为 100 的比例
+18. [x] 创建 `src/services/transform.py`，实现 `normalize_to_scale(series, base_value)` 函数：将序列归一化为以 base_value 为 100 的比例
     - 验收：输入 [100, 110, 90] base=100，输出 [100.0, 110.0, 90.0]
 
-19. [ ] 实现 `filter_by_range(df, range_key)` 函数：根据 range_key (6m/1y/3y/5y/all) 过滤 DataFrame 的日期范围
+19. [x] 实现 `filter_by_range(df, range_key)` 函数：根据 range_key (6m/1y/3y/5y/all) 过滤 DataFrame 的日期范围
     - 验收：filter_by_range(df, "6m") 返回最近约 180 天数据
 
-20. [ ] 创建 `tests/test_transform.py`，测试 normalize_to_scale 和 filter_by_range
+20. [x] 创建 `tests/test_transform.py`，测试 normalize_to_scale 和 filter_by_range
     - 验收：`python -m pytest tests/test_transform.py -v` 通过
 
 ### Phase 6: Dash 应用
