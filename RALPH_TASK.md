@@ -20,7 +20,7 @@ test_command: "python app.py"
 
 ### Phase 0: 前置验证
 
-1. [ ] 创建 `scripts/test_fred_api.py` 脚本，读取 `FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
+1. [ ] 创建 `scripts/test_fred_api.py` 脚本，读取 `secrets/FRED_API_KEY` 文件，调用 FRED API 拉取 SP500 最近 10 条数据并打印
    - 验收：运行 `python scripts/test_fred_api.py` 输出日期和数值，无报错
 
 ### Phase 1: 环境搭建
@@ -31,9 +31,9 @@ test_command: "python app.py"
 3. [x] 创建 `requirements.txt`，包含 dash, plotly, pandas, requests, pyyaml
    - 验收：`pip install -r requirements.txt` 安装成功
 
-4. [ ] 创建 `config/settings.py`，实现 `get_api_key()` 函数读取项目根目录的 `FRED_API_KEY` 文件内容
+4. [ ] 创建 `config/settings.py`，实现 `get_api_key()` 函数读取 `secrets/FRED_API_KEY` 文件内容
    - 验收：`python -c "from config.settings import get_api_key; print(get_api_key())"` 输出 API Key
-   - 注：settings.py 已创建，等待 FRED_API_KEY 文件填入 API Key
+   - 注：settings.py 已创建，等待 secrets/FRED_API_KEY 文件填入 API Key
 
 5. [x] 创建 `config/series_config.yaml`，配置 6 个数据系列：SP500, DFEDTARU, DFEDTARL, DGS1, DGS3, DGS10，每个包含 id, name, fred_series_id, category, color
    - 验收：文件存在且 YAML 格式正确
@@ -139,6 +139,18 @@ test_command: "python app.py"
 
 29. [ ] 增量更新验证：点击更新按钮，确认只拉取新数据追加
     - 验收：metadata.json 的 data_end_date 更新为今天
+
+---
+
+## Secrets
+
+所有 API Key、密钥、凭证等敏感信息存放在 `secrets/` 目录（已 gitignore）：
+
+| 用途 | 文件路径 |
+|------|----------|
+| FRED API Key | `secrets/FRED_API_KEY` |
+
+**不要硬编码任何密钥，始终从文件读取。**
 
 ---
 
