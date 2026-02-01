@@ -3,8 +3,8 @@
 # DO NOT EDIT - regenerated on task file change
 
 source_file: RALPH_TASK.md
-source_mtime: 1769933550
-generated_at: 2026-02-01T08:15:29Z
+source_mtime: 1769934199
+generated_at: 2026-02-01T08:24:16Z
 
 tasks:
   - id: "line_23"
@@ -16,14 +16,14 @@ tasks:
     raw_marker: 1.
   - id: "line_28"
     line_number: 28
-    status: pending
+    status: completed
     parallel_group: 999999
     description: 创建项目目录结构：`src/adapters/`, `src/repositories/`, `src/services/`, `src/components/`, `config/`, `data/raw/`，每个目录下创建 `__init__.py`
     indent_level: 0
     raw_marker: 2.
   - id: "line_31"
     line_number: 31
-    status: pending
+    status: completed
     parallel_group: 999999
     description: 创建 `requirements.txt`，包含 dash, plotly, pandas, requests, pyyaml
     indent_level: 0
@@ -35,176 +35,176 @@ tasks:
     description: 创建 `config/settings.py`，实现 `get_api_key()` 函数读取项目根目录的 `FRED_API_KEY` 文件内容
     indent_level: 0
     raw_marker: 4.
-  - id: "line_37"
-    line_number: 37
-    status: pending
+  - id: "line_38"
+    line_number: 38
+    status: completed
     parallel_group: 999999
     description: 创建 `config/series_config.yaml`，配置 6 个数据系列：SP500, DFEDTARU, DFEDTARL, DGS1, DGS3, DGS10，每个包含 id, name, fred_series_id, category, color
     indent_level: 0
     raw_marker: 5.
-  - id: "line_40"
-    line_number: 40
-    status: pending
+  - id: "line_41"
+    line_number: 41
+    status: completed
     parallel_group: 999999
     description: 在 `config/settings.py` 中添加 `load_series_config()` 函数，解析 series_config.yaml 返回系列列表
     indent_level: 0
     raw_marker: 6.
-  - id: "line_45"
-    line_number: 45
-    status: pending
+  - id: "line_46"
+    line_number: 46
+    status: completed
     parallel_group: 999999
     description: 创建 `src/repositories/base.py`，定义 `SeriesRepository` 抽象基类，包含抽象方法：`read(series_id, start_date, end_date)`, `write(series_id, data, mode)`, `exists(series_id)`, `get_date_range(series_id)`
     indent_level: 0
     raw_marker: 7.
-  - id: "line_48"
-    line_number: 48
-    status: pending
+  - id: "line_49"
+    line_number: 49
+    status: completed
     parallel_group: 999999
     description: 创建 `src/repositories/base.py` 中的 `MetadataRepository` 抽象基类，包含抽象方法：`get(series_id)`, `update(series_id, updates)`, `get_all()`
     indent_level: 0
     raw_marker: 8.
-  - id: "line_51"
-    line_number: 51
-    status: pending
+  - id: "line_52"
+    line_number: 52
+    status: completed
     parallel_group: 999999
     description: 创建 `src/repositories/csv_repository.py`，实现 `CSVSeriesRepository` 类：
     indent_level: 0
     raw_marker: 9.
-  - id: "line_58"
-    line_number: 58
-    status: pending
+  - id: "line_59"
+    line_number: 59
+    status: completed
     parallel_group: 999999
     description: 创建 `src/repositories/csv_repository.py` 中的 `JSONMetadataRepository` 类，操作 `data/metadata.json` 文件
     indent_level: 0
     raw_marker: 10.
-  - id: "line_61"
-    line_number: 61
-    status: pending
+  - id: "line_62"
+    line_number: 62
+    status: completed
     parallel_group: 999999
     description: 创建 `tests/test_csv_repository.py`，测试 CSVSeriesRepository 的 write→read 往返、append 模式、get_date_range
     indent_level: 0
     raw_marker: 11.
-  - id: "line_66"
-    line_number: 66
-    status: pending
+  - id: "line_67"
+    line_number: 67
+    status: completed
     parallel_group: 999999
     description: 创建 `src/adapters/base.py`，定义 `DataSourceAdapter` 抽象基类，包含抽象方法：`fetch(series_id, start_date, end_date)`, `get_metadata(series_id)`
     indent_level: 0
     raw_marker: 12.
-  - id: "line_69"
-    line_number: 69
+  - id: "line_70"
+    line_number: 70
     status: pending
     parallel_group: 999999
     description: 创建 `src/adapters/fred_adapter.py`，实现 `FREDAdapter` 类：
     indent_level: 0
     raw_marker: 13.
-  - id: "line_78"
-    line_number: 78
-    status: pending
+  - id: "line_80"
+    line_number: 80
+    status: completed
     parallel_group: 999999
     description: 创建 `src/services/data_service.py`，实现 `DataService` 类，构造函数接收 `SeriesRepository` 和 `MetadataRepository`
     indent_level: 0
     raw_marker: 14.
-  - id: "line_81"
-    line_number: 81
-    status: pending
+  - id: "line_83"
+    line_number: 83
+    status: completed
     parallel_group: 999999
     description: 实现 `DataService.get_series(series_ids, start_date, end_date)` 方法：检查本地是否存在数据，存在则读取 CSV，不存在则调用适配器拉取并保存
     indent_level: 0
     raw_marker: 15.
-  - id: "line_84"
-    line_number: 84
-    status: pending
+  - id: "line_86"
+    line_number: 86
+    status: completed
     parallel_group: 999999
     description: 实现 `DataService.refresh_data(series_ids, mode)` 方法：
     indent_level: 0
     raw_marker: 16.
-  - id: "line_89"
-    line_number: 89
-    status: pending
+  - id: "line_91"
+    line_number: 91
+    status: completed
     parallel_group: 999999
     description: 实现元数据自动更新：每次 refresh_data 后更新 metadata.json 的 `last_updated` 和 `data_end_date` 字段
     indent_level: 0
     raw_marker: 17.
-  - id: "line_94"
-    line_number: 94
-    status: pending
+  - id: "line_96"
+    line_number: 96
+    status: completed
     parallel_group: 999999
     description: 创建 `src/services/transform.py`，实现 `normalize_to_scale(series, base_value)` 函数：将序列归一化为以 base_value 为 100 的比例
     indent_level: 0
     raw_marker: 18.
-  - id: "line_97"
-    line_number: 97
-    status: pending
+  - id: "line_99"
+    line_number: 99
+    status: completed
     parallel_group: 999999
     description: 实现 `filter_by_range(df, range_key)` 函数：根据 range_key (6m/1y/3y/5y/all) 过滤 DataFrame 的日期范围
     indent_level: 0
     raw_marker: 19.
-  - id: "line_100"
-    line_number: 100
-    status: pending
+  - id: "line_102"
+    line_number: 102
+    status: completed
     parallel_group: 999999
     description: 创建 `tests/test_transform.py`，测试 normalize_to_scale 和 filter_by_range
     indent_level: 0
     raw_marker: 20.
-  - id: "line_105"
-    line_number: 105
-    status: pending
+  - id: "line_107"
+    line_number: 107
+    status: completed
     parallel_group: 999999
     description: 创建 `app.py`，初始化 Dash 应用，配置基本布局框架（控制面板区 + 图表区 + 状态栏）
     indent_level: 0
     raw_marker: 21.
-  - id: "line_108"
-    line_number: 108
-    status: pending
+  - id: "line_111"
+    line_number: 111
+    status: completed
     parallel_group: 999999
     description: 创建 `src/components/controls.py`，实现控制面板组件：
     indent_level: 0
     raw_marker: 22.
-  - id: "line_114"
-    line_number: 114
-    status: pending
+  - id: "line_117"
+    line_number: 117
+    status: completed
     parallel_group: 999999
     description: 创建 `src/components/chart.py`，实现图表组件：
     indent_level: 0
     raw_marker: 23.
-  - id: "line_120"
-    line_number: 120
-    status: pending
+  - id: "line_123"
+    line_number: 123
+    status: completed
     parallel_group: 999999
     description: 在 `app.py` 中实现回调：时间范围按钮点击 → 更新图表数据范围
     indent_level: 0
     raw_marker: 24.
-  - id: "line_123"
-    line_number: 123
-    status: pending
+  - id: "line_126"
+    line_number: 126
+    status: completed
     parallel_group: 999999
     description: 在 `app.py` 中实现回调：显示模式切换 → 重新计算 Y 轴数据（绝对值/归一化）
     indent_level: 0
     raw_marker: 25.
-  - id: "line_126"
-    line_number: 126
-    status: pending
+  - id: "line_129"
+    line_number: 129
+    status: completed
     parallel_group: 999999
     description: 在 `app.py` 中实现回调：数据系列勾选变化 → 更新图表显示的线条
     indent_level: 0
     raw_marker: 26.
-  - id: "line_129"
-    line_number: 129
-    status: pending
+  - id: "line_132"
+    line_number: 132
+    status: completed
     parallel_group: 999999
     description: 在 `app.py` 中添加\"更新数据\"按钮和状态显示，点击触发 `DataService.refresh_data()`，显示更新结果
     indent_level: 0
     raw_marker: 27.
-  - id: "line_134"
-    line_number: 134
+  - id: "line_137"
+    line_number: 137
     status: pending
     parallel_group: 999999
     description: 首次启动完整流程验证：删除 `data/raw/*.csv` 和 `data/metadata.json`，运行 `python app.py`，确认自动拉取 6 个系列并显示图表
     indent_level: 0
     raw_marker: 28.
-  - id: "line_137"
-    line_number: 137
+  - id: "line_140"
+    line_number: 140
     status: pending
     parallel_group: 999999
     description: 增量更新验证：点击更新按钮，确认只拉取新数据追加
