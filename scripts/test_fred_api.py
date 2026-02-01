@@ -11,7 +11,7 @@ def get_api_key() -> str:
     # Find project root (where FRED_API_KEY file is located)
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    key_file = project_root / "FRED_API_KEY"
+    key_file = project_root / "secrets" / "FRED_API_KEY"
     
     if not key_file.exists():
         raise FileNotFoundError(f"FRED_API_KEY file not found at {key_file}")

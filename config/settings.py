@@ -19,7 +19,7 @@ def get_api_key() -> str:
         FileNotFoundError: If FRED_API_KEY file doesn't exist
         ValueError: If FRED_API_KEY file is empty
     """
-    key_file = get_project_root() / "FRED_API_KEY"
+    key_file = get_project_root() / "secrets" / "FRED_API_KEY"
     
     if not key_file.exists():
         raise FileNotFoundError(f"FRED_API_KEY file not found at {key_file}")
