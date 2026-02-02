@@ -18,7 +18,7 @@ test_command: "ls -la news/data/"
 ## Success Criteria
 
 ### Phase 1: 准备工作
-1. [ ] 确认输出目录 `news/data/` 存在，不存在则创建
+1. [x] 确认输出目录 `news/data/` 存在，不存在则创建
 
 ### Phase 2: 处理 2026-01-24
 1. [ ] 读取 `news/meta_data/macro_economy/2026-01-24.json`，获取 articles 列表
