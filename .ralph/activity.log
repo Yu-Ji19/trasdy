@@ -28,3 +28,11 @@ EOF
 [13:56:53] 🟢 TOKENS: 17171 / 80000 (21%) [read:62KB write:0KB assist:1KB shell:0KB]
 [13:57:40] 🟢 TOKENS: 17258 / 80000 (21%) [read:62KB write:0KB assist:1KB shell:0KB]
 [13:57:43] 🟢 SHELL python -m py_compile scripts/process_news.py → exit 0
+[13:57:46] 🟢 SHELL git status && git diff && git add scripts/process_news.py .ralph/activity.log && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+news: add metadata processor for zh summary and market impact
+
+EOF
+)" && git status → exit 0
+[13:58:12] 🟢 SHELL python scripts/process_news.py --start-date 2026-01-24 --end-date 2026-01-24 → exit 0
+[13:58:12] 🟢 TOKENS: 17258 / 80000 (21%) [read:62KB write:0KB assist:1KB shell:0KB]
+[13:58:15] 🟢 READ /Users/yu/trasdy/news/data/2026-01-24.json (71 lines, ~6.9KB)
