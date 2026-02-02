@@ -1,35 +1,35 @@
 {
   "date": "2026-01-25",
-  "processed_time": "2026-02-02T05:58:49.930174Z",
+  "processed_time": "2026-02-02T07:06:16.398599Z",
   "article_count": 4,
   "articles": [
     {
       "url": "https://www.banklesstimes.com/articles/2026/01/25/crypto-market-crash-heres-why-bitcoin-and-altcoins-are-going-down-today/",
       "title": "Crypto Market Crash : Here Why Bitcoin and Altcoins are Going Down Today",
       "category": "宏观经济",
-      "summary": "比特币与主流山寨币下跌，市场出现抛售与杠杆清算压力。",
-      "analysis": "利空加密与高beta股，避险或升温"
+      "summary": "报道称加密市场出现明显下跌，比特币及主要山寨币承压，短期抛售情绪升温。下跌可能与杠杆资金被动平仓、风险事件发酵或宏观预期变化有关。在流动性收缩或风险偏好降温阶段，加密资产波动通常放大并带动相关概念股跟随。后续关注是否出现连锁清算、稳定币资金流及交易所风险控制措施的变化。",
+      "analysis": "对美国股市而言，加密大跌往往压制高beta与部分科技股情绪，短期偏利空。若风险偏好下降，资金可能回流债市，美债价格走强、收益率下行。美元可能因避险需求上升而走强，黄金亦可能受益于避险情绪。若下跌迅速止稳并回补，反而可能释放过度杠杆后的修复机会，但波动仍高。"
     },
     {
       "url": "https://www.zerohedge.com/crypto/repricing-sovereignty",
       "title": "Repricing Sovereignty",
       "category": "地缘政治",
-      "summary": "讨论主权风险重新定价及其外溢效应，关注债市与资本流动。",
-      "analysis": "偏利空风险资产，利好黄金/美元"
+      "summary": "报道讨论主权风险被重新定价的可能性，关注信用溢价变化及其对全球资本流动的影响。当市场对国家财政与政治稳定性担忧上升时，风险溢价会通过债市与汇市快速传导。相关事件可能引发跨市场联动，冲击新兴市场资产并扰动全球风险偏好。投资者会重点观察评级、融资成本与政策应对，判断风险是否从局部扩散为系统性。",
+      "analysis": "主权风险上行通常利空风险资产，美国股市短期承压，防御板块相对占优。资金可能回流高流动性资产，美债受益、收益率下行，信用利差则可能走阔。美元与黄金多在避险需求上升时走强，原油与工业金属则可能因增长担忧而走弱。若风险被控制在局部，市场可能在恐慌后修复，但不确定性仍会抬高波动溢价。"
     },
     {
       "url": "https://www.coindesk.com/markets/2026/01/25/here-s-what-fed-s-highly-anticipated-rate-decision-this-week-means-for-bitcoin-and-the-dollar",
       "title": "Fed rate decision : Why Jerome Powell press conference is the real wildcard for markets",
       "category": "国家政策",
-      "summary": "市场关注美联储利率决议与鲍威尔表态，对美元与加密资产影响显著。",
-      "analysis": "政策不确定性升，风险资产波动，美元偏强"
+      "summary": "报道聚焦美联储利率决议与鲍威尔发布会，市场试图从措辞中推断下一步政策路径。利率点阵图与经济展望将影响对通胀与增长的判断，进而重塑风险资产定价。交易层面关注的是“降息时点/幅度”与“再通胀风险”的权衡，分歧可能导致波动放大。后续需结合就业与通胀数据验证预期，政策信号可能在数周内持续被市场消化。",
+      "analysis": "若口径偏鹰派，通常利空成长股与高估值板块，美债价格承压、收益率上行。若口径偏鸽派或强调通胀回落，风险偏好或回升，美债收益率回落、股市偏利好。美元对利差预期高度敏感，鹰派更易推升美元并压制黄金，鸽派则相反。对原油与大宗商品而言，关键在于增长预期与美元方向，影响可能呈现分化。"
     },
     {
       "url": "https://www.fairobserver.com/economics/tariffs-treasuries-and-the-quiet-risk-to-americas-financial-power/",
       "title": "Tariffs , Treasuries and the Quiet Risk to America Financial Power",
       "category": "国家政策",
-      "summary": "文章讨论关税与美债议题的长期影响，或引发资金与风险定价再调整。",
-      "analysis": "利空风险资产，或推升期限溢价与波动"
+      "summary": "报道讨论关税政策与美债市场的潜在影响，强调贸易摩擦可能改变通胀与增长路径。关税上调会影响企业成本与价格传导，并可能引发供应链再配置与投资决策调整。在财政与债务供给压力背景下，美债需求结构与期限溢价可能出现再定价。市场将关注政策落地的节奏与范围，以及对企业盈利与居民消费的边际影响。",
+      "analysis": "若关税推升通胀预期，可能压制股市估值并促使收益率上行，整体对风险资产偏利空。债券方面期限溢价上升会令美债价格承压，长端利率更易波动。美元可能因利差与避险需求走强，但贸易不确定性也会增加外汇市场波动。黄金在政策不确定与通胀预期抬升时往往受益，原油则取决于增长与供需博弈。"
     }
   ]
 }
