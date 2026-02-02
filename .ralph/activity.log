@@ -73,3 +73,16 @@ EOF
 )" && git status → exit 0
 [14:00:39] 🟢 SHELL ls -la news/data/ → exit 0
 [14:00:48] 🟢 SHELL git status → exit 0
+[14:00:56] 🟢 SHELL git add .ralph/activity.log && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+ralph: record test_command run
+
+EOF
+)" && git status → exit 0
+[14:00:56] 🟢 TOKENS: 22371 / 80000 (27%) [read:82KB write:0KB assist:1KB shell:0KB]
+[14:01:06] 🟢 SHELL git status -sb && git remote -v && git branch -vv | head -50 → exit 0
+[14:01:26] 🟢 TOKENS: 22371 / 80000 (27%) [read:82KB write:0KB assist:1KB shell:0KB]
+[14:02:10] 🟢 SHELL git push -u origin HEAD → exit 0
+[14:02:10] 🟢 TOKENS: 22371 / 80000 (27%) [read:82KB write:0KB assist:1KB shell:0KB]
+[14:02:24] 🟢 ✅ Agent signaled COMPLETE
+[14:02:24] 🟢 SESSION END: 509465ms, ~22506 tokens used
+[14:02:24] 🟢 TOKENS: 22506 / 80000 (28%) [read:82KB write:0KB assist:2KB shell:0KB]
