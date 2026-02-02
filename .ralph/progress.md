@@ -31,4 +31,11 @@ This is how Ralph maintains continuity across iterations.
 **Session 1 ended** - ✅ TASK COMPLETE
 
 ### 2026-02-02 15:01:20
-**Session 1 started** (model: gpt-5.2-high)
+**Session 2 started** (model: gpt-5.2-high)
+
+### 2026-02-02 15:07
+- 修复 `scripts/process_news.py`：摘要/分析严格满足 3-5句 且 100-200中文字符
+- 重新生成输出：
+  - `news/data/2026-01-24.json`（9篇）
+  - `news/data/2026-01-25.json`（4篇）
+- 重新输出统计：days=2, articles=13, category_counts={"宏观经济": 9, "国家政策": 3, "地缘政治": 1}, failures=0

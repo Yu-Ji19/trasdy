@@ -90,3 +90,67 @@ EOF
 ═══════════════════════════════════════════════════════════════
 Ralph Session Started: 2026年 2月 2日 星期一 15时01分20秒 CST
 ═══════════════════════════════════════════════════════════════
+[15:02:39] 🟢 SESSION START: model=GPT-5.2 High
+[15:02:39] 🟢 TOKENS: 750 / 80000 (0%) [read:0KB write:0KB assist:0KB shell:0KB]
+[15:02:52] 🟢 READ /Users/yu/trasdy/RALPH_TASK.md (95 lines, ~9.2KB)
+[15:02:52] 🟢 READ /Users/yu/trasdy/.ralph/guardrails.md (28 lines, ~2.7KB)
+[15:02:52] 🟢 READ /Users/yu/trasdy/.ralph/errors.log (5 lines, ~.4KB)
+[15:02:52] 🟢 READ /Users/yu/trasdy/.ralph/progress.md (35 lines, ~3.4KB)
+[15:02:52] 🟢 READ /Users/yu/trasdy/.ralph/activity.log (95 lines, ~9.2KB)
+[15:03:10] 🟢 TOKENS: 7348 / 80000 (9%) [read:25KB write:0KB assist:0KB shell:0KB]
+[15:03:10] 🟢 READ /Users/yu/trasdy/scripts/process_news.py (316 lines, ~30.8KB)
+[15:03:10] 🟢 READ /Users/yu/trasdy/news/data/2026-01-24.json (71 lines, ~6.9KB)
+[15:03:10] 🟢 READ /Users/yu/trasdy/news/data/2026-01-25.json (36 lines, ~3.5KB)
+[15:03:10] 🟢 SHELL git diff → exit 0
+[15:03:10] 🟢 SHELL git log -10 --oneline → exit 0
+[15:03:10] 🟢 SHELL git status -sb → exit 0
+[15:03:41] 🟢 TOKENS: 17923 / 80000 (22%) [read:66KB write:0KB assist:0KB shell:0KB]
+[15:04:02] 🟢 READ /Users/yu/trasdy/requirements.txt (7 lines, ~.6KB)
+[15:04:02] 🟢 SHELL python -c "import requests; print(requests.__version__)" → exit 0
+[15:05:36] 🟢 TOKENS: 18165 / 80000 (22%) [read:67KB write:0KB assist:0KB shell:0KB]
+[15:05:55] 🟢 SHELL python -m py_compile scripts/process_news.py → exit 0
+[15:06:16] 🟢 SHELL python scripts/process_news.py --start-date 2026-01-24 --end-date 2026-01-25 → exit 0
+[15:06:16] 🟢 TOKENS: 18165 / 80000 (22%) [read:67KB write:0KB assist:0KB shell:0KB]
+[15:06:29] 🟢 READ /Users/yu/trasdy/news/data/2026-01-24.json (71 lines, ~6.9KB)
+[15:06:29] 🟢 SHELL python - <<'PY'
+import json
+from pathlib import Path
+
+def count_sentences(s: str) -> int:
+    return sum(1 for x in s.split('。') if x.strip())
+
+for day in ['2026-01-24','2026-01-25']:
+    p = Path('news/data')/f'{day}.json'
+    data = json.loads(p.read_text(encoding='utf-8'))
+    print(day, 'article_count', data['article_count'])
+    for i,a in enumerate(data['articles']):
+        sm=a['summary']; an=a['analysis']
+        ok = (100<=len(sm)<=200 and 100<=len(an)<=200 and 3<=count_sentences(sm)<=5 and 3<=count_sentences(an)<=5)
+        if not ok:
+            print('  BAD', i, len(sm), count_sentences(sm), len(an), count_sentences(an), a['title'])
+            print('   summary:', sm)
+            print('   analysis:', an)
+            break
+    else:
+        print('  OK all')
+PY → exit 0
+[15:06:29] 🟢 READ /Users/yu/trasdy/news/data/2026-01-25.json (36 lines, ~3.5KB)
+[15:06:50] 🟢 TOKENS: 20840 / 80000 (26%) [read:77KB write:0KB assist:0KB shell:0KB]
+[15:06:50] 🟢 SHELL git diff --stat → exit 0
+[15:07:04] 🟢 READ /Users/yu/trasdy/.ralph/progress.md (35 lines, ~3.4KB)
+[15:07:11] 🟢 SHELL date '+%Y-%m-%d %H:%M:%S %Z' → exit 0
+[15:07:27] 🟢 TOKENS: 21715 / 80000 (27%) [read:81KB write:0KB assist:0KB shell:0KB]
+[15:07:43] 🟢 SHELL git status → exit 0
+[15:07:51] 🟢 SHELL git add scripts/process_news.py && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+news: enforce 100-200 char zh summary and analysis
+
+EOF
+)" → exit 0
+[15:07:55] 🟢 SHELL git add news/data/2026-01-24.json news/data/2026-01-25.json && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+news: regenerate processed outputs for 2026-01-24 and 2026-01-25
+
+EOF
+)" → exit 0
+[15:07:58] 🟢 TOKENS: 21715 / 80000 (27%) [read:81KB write:0KB assist:0KB shell:0KB]
+[15:08:10] 🟢 SHELL ls -la news/data/ → exit 0
+[15:08:13] 🟢 SHELL git status -sb && git diff → exit 0
