@@ -1,4 +1,4 @@
-"""Abstract base class for data source adapters."""
+"""数据源适配器的抽象基类。"""
 
 from abc import ABC, abstractmethod
 from datetime import date
@@ -7,7 +7,7 @@ import pandas as pd
 
 
 class DataSourceAdapter(ABC):
-    """Abstract base class for external data source adapters."""
+    """外部数据源适配器的抽象基类。"""
     
     @abstractmethod
     def fetch(
@@ -16,26 +16,26 @@ class DataSourceAdapter(ABC):
         start_date: Optional[date] = None, 
         end_date: Optional[date] = None
     ) -> pd.DataFrame:
-        """Fetch time series data from the data source.
+        """从数据源获取时间序列数据。
         
         Args:
-            series_id: The identifier for the data series
-            start_date: Optional start date for the data
-            end_date: Optional end date for the data
+            series_id: 数据系列的标识符
+            start_date: 可选的数据起始日期
+            end_date: 可选的数据结束日期
             
         Returns:
-            DataFrame with columns ['date', 'value']
+            包含 ['date', 'value'] 列的 DataFrame
         """
         pass
     
     @abstractmethod
     def get_metadata(self, series_id: str) -> dict:
-        """Get metadata for a series.
+        """获取系列的元数据。
         
         Args:
-            series_id: The identifier for the data series
+            series_id: 数据系列的标识符
             
         Returns:
-            Dictionary containing series metadata
+            包含系列元数据的字典
         """
         pass

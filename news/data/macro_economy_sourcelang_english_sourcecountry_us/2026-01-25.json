@@ -1,0 +1,48 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-01-25",
+  "fetch_time": "2026-02-02T13:23:23.932165",
+  "article_count": 4,
+  "articles": [
+    {
+      "url": "https://www.banklesstimes.com/articles/2026/01/25/crypto-market-crash-heres-why-bitcoin-and-altcoins-are-going-down-today/",
+      "url_mobile": "",
+      "title": "Crypto Market Crash : Here Why Bitcoin and Altcoins are Going Down Today",
+      "seendate": "20260125T221500Z",
+      "socialimage": "https://cdn.banklesstimes.com/bt/content/uploads/2024/09/stock-market-crash-075103965-16x9_0.jpg",
+      "domain": "banklesstimes.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.zerohedge.com/crypto/repricing-sovereignty",
+      "url_mobile": "",
+      "title": "Repricing Sovereignty",
+      "seendate": "20260125T183000Z",
+      "socialimage": "https://assets.zerohedge.com/s3fs-public/styles/16_9_max_700/public/2026-01/TheyLiveOBEY-e1737322723166.jpg?baf8d&itok=8RPiNRAh",
+      "domain": "zerohedge.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.coindesk.com/markets/2026/01/25/here-s-what-fed-s-highly-anticipated-rate-decision-this-week-means-for-bitcoin-and-the-dollar",
+      "url_mobile": "",
+      "title": "Fed rate decision : Why Jerome Powell press conference is the real wildcard for markets",
+      "seendate": "20260125T180000Z",
+      "socialimage": "https://cdn.sanity.io/images/s3y3vcno/production/e6a293cfa0fce866c76c9d1d032d111671b07570-1920x1079.png?auto=format&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "domain": "coindesk.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fairobserver.com/economics/tariffs-treasuries-and-the-quiet-risk-to-americas-financial-power/",
+      "url_mobile": "",
+      "title": "Tariffs , Treasuries and the Quiet Risk to America Financial Power",
+      "seendate": "20260125T164500Z",
+      "socialimage": "https://www.fairobserver.com/wp-content/uploads/2026/01/Tariffs-Treasuries-and-the-Quiet-Risk-to-AmericaFinancial-Power.jpg",
+      "domain": "fairobserver.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""FRED API adapter implementation."""
+"""FRED API 适配器实现。"""
 
 from datetime import date
 from typing import Optional
@@ -10,21 +10,21 @@ from config.settings import get_api_key
 
 
 class FREDAdapter(DataSourceAdapter):
-    """Adapter for Federal Reserve Economic Data (FRED) API."""
+    """美联储经济数据 (FRED) API 适配器。"""
     
     BASE_URL = "https://api.stlouisfed.org/fred"
     
     def __init__(self, api_key: Optional[str] = None):
-        """Initialize the FRED adapter.
+        """初始化 FRED 适配器。
         
         Args:
-            api_key: FRED API key. If not provided, reads from FRED_API_KEY file.
+            api_key: FRED API 密钥。如果未提供，则从 FRED_API_KEY 文件读取。
         """
         self._api_key = api_key
     
     @property
     def api_key(self) -> str:
-        """Get the API key, loading from file if needed."""
+        """获取 API 密钥，如果需要则从文件加载。"""
         if self._api_key is None:
             self._api_key = get_api_key()
         return self._api_key
@@ -35,15 +35,15 @@ class FREDAdapter(DataSourceAdapter):
         start_date: Optional[date] = None, 
         end_date: Optional[date] = None
     ) -> pd.DataFrame:
-        """Fetch time series data from FRED API.
+        """从 FRED API 获取时间序列数据。
         
         Args:
-            series_id: FRED series ID (e.g., 'SP500', 'DGS10')
-            start_date: Optional start date for the data (date object or 'YYYY-MM-DD' string)
-            end_date: Optional end date for the data (date object or 'YYYY-MM-DD' string)
+            series_id: FRED 系列 ID（例如 'SP500', 'DGS10'）
+            start_date: 可选的数据起始日期（date 对象或 'YYYY-MM-DD' 字符串）
+            end_date: 可选的数据结束日期（date 对象或 'YYYY-MM-DD' 字符串）
             
         Returns:
-            DataFrame with columns ['date', 'value']
+            包含 ['date', 'value'] 列的 DataFrame
         """
         url = f"{self.BASE_URL}/series/observations"
         params = {
@@ -53,7 +53,7 @@ class FREDAdapter(DataSourceAdapter):
         }
         
         if start_date:
-            # Handle both date objects and string inputs
+            # 同时处理 date 对象和字符串输入
             params["observation_start"] = start_date.isoformat() if hasattr(start_date, 'isoformat') else start_date
         if end_date:
             params["observation_end"] = end_date.isoformat() if hasattr(end_date, 'isoformat') else end_date
@@ -64,11 +64,11 @@ class FREDAdapter(DataSourceAdapter):
         data = response.json()
         observations = data.get("observations", [])
         
-        # Parse observations into DataFrame
+        # 将观测数据解析为 DataFrame
         rows = []
         for obs in observations:
             value_str = obs.get("value", "")
-            # Skip missing values (FRED uses "." for missing)
+            # 跳过缺失值（FRED 使用 "." 表示缺失）
             if value_str == "." or value_str == "":
                 continue
             
@@ -78,7 +78,7 @@ class FREDAdapter(DataSourceAdapter):
                     "value": float(value_str)
                 })
             except (ValueError, KeyError):
-                # Skip rows that can't be parsed
+                # 跳过无法解析的行
                 continue
         
         if not rows:
@@ -89,13 +89,13 @@ class FREDAdapter(DataSourceAdapter):
         return df.sort_values("date").reset_index(drop=True)
     
     def get_metadata(self, series_id: str) -> dict:
-        """Get metadata for a FRED series.
+        """获取 FRED 系列的元数据。
         
         Args:
-            series_id: FRED series ID
+            series_id: FRED 系列 ID
             
         Returns:
-            Dictionary containing series metadata
+            包含系列元数据的字典
         """
         url = f"{self.BASE_URL}/series"
         params = {

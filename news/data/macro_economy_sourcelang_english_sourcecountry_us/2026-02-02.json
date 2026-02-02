@@ -1,0 +1,18 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-02-02",
+  "fetch_time": "2026-02-02T13:24:17.047666",
+  "article_count": 1,
+  "articles": [
+    {
+      "url": "http://www.floridastatesman.com/news/278843584/foreign-firms-boost-ai-powered-investment-strategies-for-china",
+      "url_mobile": "",
+      "title": "Foreign firms boost AI - powered investment strategies for China",
+      "seendate": "20260202T044500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/599fa1f/3bafad36-2ee3-4c57-8b94-1c612ffc1937/0/XxjwshE000007-20260202-CBMFN0A001-600x315.jpg",
+      "domain": "floridastatesman.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

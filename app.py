@@ -1,6 +1,6 @@
-"""Trasdy MVP - Macro Economic Data Platform.
+"""Trasdy MVP - 宏观经济数据平台
 
-A Dash-based application for visualizing macroeconomic data from FRED.
+基于 Dash 的宏观经济数据可视化应用，数据来源于 FRED。
 """
 
 from dash import Dash, html, dcc, callback, Output, Input, State
@@ -13,18 +13,18 @@ from src.services.data_service import DataService, RefreshMode
 from src.repositories.csv_repository import CSVSeriesRepository, JSONMetadataRepository
 
 
-# Initialize services
+# 初始化服务
 series_repo = CSVSeriesRepository()
 metadata_repo = JSONMetadataRepository()
 data_service = DataService(series_repo, metadata_repo)
 
-# Initialize Dash app
+# 初始化 Dash 应用
 app = Dash(__name__)
 app.title = "Trasdy - 宏观经济数据平台"
 
-# Layout
+# 布局
 app.layout = html.Div([
-    # Header
+    # 页头
     html.Div([
         html.H1("Trasdy", style={"margin": "0", "color": "#333"}),
         html.P("宏观经济数据分析平台", style={"margin": "5px 0 0 0", "color": "#666"})
@@ -35,15 +35,15 @@ app.layout = html.Div([
         "marginBottom": "20px"
     }),
     
-    # Main content
+    # 主内容区
     html.Div([
-        # Control panel
+        # 控制面板
         create_control_panel(),
         
-        # Chart area
+        # 图表区域
         create_chart_component(),
         
-        # Status bar
+        # 状态栏
         html.Div(id="status-bar", style={
             "padding": "10px",
             "color": "#666",
@@ -56,7 +56,7 @@ app.layout = html.Div([
         "padding": "0 20px"
     }),
     
-    # Store for data caching
+    # 数据缓存存储
     dcc.Store(id="data-store"),
     
 ], style={
@@ -72,13 +72,13 @@ app.layout = html.Div([
     prevent_initial_call=False
 )
 def load_data(selected_series):
-    """Load data for selected series."""
+    """加载选中的数据系列。"""
     if not selected_series:
         return {}
     
     try:
         data_dict = data_service.get_series(selected_series)
-        # Convert to JSON-serializable format
+        # 转换为 JSON 可序列化格式
         result = {}
         for series_id, df in data_dict.items():
             if not df.empty:
@@ -100,13 +100,13 @@ def load_data(selected_series):
     Input("series-selection", "value"),
 )
 def update_chart(stored_data, time_range, display_mode, selected_series):
-    """Update chart based on controls."""
+    """根据控制选项更新图表。"""
     if not stored_data or not selected_series:
         return create_empty_figure()
     
     import pandas as pd
     
-    # Convert stored data back to DataFrames
+    # 将存储的数据转换回 DataFrame
     data_dict = {}
     for series_id in selected_series:
         if series_id in stored_data:
@@ -120,7 +120,7 @@ def update_chart(stored_data, time_range, display_mode, selected_series):
     if not data_dict:
         return create_empty_figure()
     
-    # Apply transformations
+    # 应用数据转换
     normalize = (display_mode == "scale")
     prepared_data = prepare_chart_data(data_dict, range_key=time_range, normalize=normalize)
     
@@ -135,12 +135,12 @@ def update_chart(stored_data, time_range, display_mode, selected_series):
     prevent_initial_call=True
 )
 def refresh_data(n_clicks, selected_series):
-    """Refresh data from FRED API."""
+    """从 FRED API 刷新数据。"""
     if not n_clicks or not selected_series:
         return "", {}
     
     try:
-        # Get all configured series for refresh
+        # 获取所有配置的系列进行刷新
         all_series = data_service.get_all_configured_series_ids()
         result = data_service.refresh_data(all_series, mode=RefreshMode.INCREMENTAL)
         
@@ -148,7 +148,7 @@ def refresh_data(n_clicks, selected_series):
         timestamp = datetime.now().strftime("%H:%M:%S")
         status = f"已更新 {total_records} 条记录 ({timestamp})"
         
-        # Reload data
+        # 重新加载数据
         data_dict = data_service.get_series(selected_series)
         stored = {}
         for series_id, df in data_dict.items():
@@ -170,7 +170,7 @@ def refresh_data(n_clicks, selected_series):
     Input("display-mode", "value"),
 )
 def update_status(stored_data, time_range, display_mode):
-    """Update status bar with current settings."""
+    """更新状态栏显示当前设置。"""
     if not stored_data:
         return "请选择数据系列"
     

@@ -1,0 +1,198 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-01-30",
+  "fetch_time": "2026-02-02T13:23:58.381203",
+  "article_count": 19,
+  "articles": [
+    {
+      "url": "https://finance.yahoo.com/news/carpenter-tech-crs-earnings-call-163118818.html",
+      "url_mobile": "",
+      "title": "Carpenter Tech ( CRS ) Earnings Call Transcript",
+      "seendate": "20260131T000000Z",
+      "socialimage": "https://s.yimg.com/os/en/motleyfool.com/e48e86dda35543079ee2080fd9208b73",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/why-dropping-us-dollar-index-161811635.html",
+      "url_mobile": "",
+      "title": "Why Dropping US Dollar Index Isnt Pumping Bitcoin Price , JPMorgan Explains",
+      "seendate": "20260130T234500Z",
+      "socialimage": "https://s.yimg.com/os/en/coinspeaker_us_106/e196febda0391965f1241da207b58abc",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-1-30-visa-defies-economic-gravity-resilient-consumer-spending-drives-strong-start-to-fiscal-2026",
+      "url_mobile": "",
+      "title": "FinancialContent - Visa Defies Economic Gravity : Resilient Consumer Spending Drives Strong Start to Fiscal 2026",
+      "seendate": "20260130T231500Z",
+      "socialimage": "https://marketminute.ghost.io/content/images/size/w1200/2026/01/d7308605-36ac-492e-a367-3632dc257245.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/01/30/cavco-cvco-q1-2026-earnings-call-transcript/?source=iedfolrf0000001",
+      "url_mobile": "",
+      "title": "Cavco ( CVCO ) Q1 2026 Earnings Call Transcript",
+      "seendate": "20260130T210000Z",
+      "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/b4204f36ed605fc54d4ba32e2cb31d1dd892afd6-800x450.jpg",
+      "domain": "fool.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/live/federal-reserve-chair-nomination-live-wall-street-reacts-to-trumps-fed-pick-kevin-warsh-as-hurdles-remain-in-the-senate-182518657.html",
+      "url_mobile": "",
+      "title": "Federal Reserve chair nomination live : Wall Street reacts to Trump Fed pick , Kevin Warsh , as hurdles remain in the Senate",
+      "seendate": "20260130T184500Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/VNEVOc1TloTFN07W1qnNTg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2026-01/a87a0d90-fe08-11f0-bf8f-85a08713c803",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/01/30/overseas-markets-international-stocks-investing-etfs.html",
+      "url_mobile": "https://www.cnbc.com/amp/2026/01/30/overseas-markets-international-stocks-investing-etfs.html",
+      "title": "Miss foreign stock run in 2025 ? Still market money to be made overseas",
+      "seendate": "20260130T180000Z",
+      "socialimage": "https://image.cnbcfm.com/api/v1/image/108253826-1768609551182-gettyimages-2233846940-BRAZIL_REAL.jpeg?v=1768609617",
+      "domain": "cnbc.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/live/federal-reserve-chair-nomination-live-trump-taps-kevin-warsh-to-replace-jerome-powell-as-fed-chair-142627812.html",
+      "url_mobile": "",
+      "title": "Federal Reserve chair nomination live : Trump taps Kevin Warsh to replace Jerome Powell as Fed chair",
+      "seendate": "20260130T150000Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/boDkS3PYu.VYKyHo2PP1FQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2026-01/2a80b450-fdd3-11f0-9d6f-185db706e891",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.insidermonkey.com/blog/carpenter-technology-corporation-nysecrs-q2-2026-earnings-call-transcript-1685248/",
+      "url_mobile": "",
+      "title": "Carpenter Technology Corporation ( NYSE : CRS ) Q2 2026 Earnings Call Transcript",
+      "seendate": "20260130T140000Z",
+      "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2023/10/15005851/CRS-insidermonkey-1697345929009.jpg",
+      "domain": "insidermonkey.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/live/federal-reserve-live-coverage-trump-taps-kevin-warsh-for-fed-chair-nomination-to-replace-jerome-powell-132250821.html",
+      "url_mobile": "",
+      "title": "Federal Reserve live coverage : Trump taps Kevin Warsh for Fed chair nomination to replace Jerome Powell",
+      "seendate": "20260130T134500Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/boDkS3PYu.VYKyHo2PP1FQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2026-01/2a80b450-fdd3-11f0-9d6f-185db706e891",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.forbes.com/sites/investor-hub/article/5-energy-stocks-to-buy-in-2026/",
+      "url_mobile": "",
+      "title": "5 Energy Stocks To Buy In 2026",
+      "seendate": "20260130T130000Z",
+      "socialimage": "https://imageio.forbes.com/specials-images/imageserve/697bd5ed0b61eacd2b038784/0x0.jpg?format=jpg&fit=bounds",
+      "domain": "forbes.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://smallcapnetwork.com/banner_articles/north-american-markets-finished-with-a-familiar-split-screen/",
+      "url_mobile": "",
+      "title": "North American markets finished with a familiar split - screen",
+      "seendate": "20260130T121500Z",
+      "socialimage": "",
+      "domain": "smallcapnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.benzinga.com/markets/commodities/26/01/50256643/cathie-wood-warns-the-real-bubble-is-gold-as-robin-brooks-exposes-bogus-central-bank-buying-m",
+      "url_mobile": "",
+      "title": "Cathie Wood Warns The Real Bubble Is Gold As Robin Brooks Exposes  Bogu Central Bank Buying Myth - SPDR Gold Shares ( ARCA : GLD ) ",
+      "seendate": "20260130T090000Z",
+      "socialimage": "https://cdn.benzinga.com/files/images/story/2026/01/30/A-Lump-Of-Gold-On-A-Stone-Floor.jpeg?&fit=crop",
+      "domain": "benzinga.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/fast-casual-comeback-tour-075100257.html",
+      "url_mobile": "",
+      "title": "The Fast - Casual Comeback Tour",
+      "seendate": "20260130T081500Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/QewtQ09XVSgTafQ6wPpP8A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/motleyfool.com/b68e4ca3213a71f907ea3f5d3aa31919",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/01/30/china-beijing-trade-tariffs-trump-starmer-carney.html",
+      "url_mobile": "https://www.cnbc.com/amp/2026/01/30/china-beijing-trade-tariffs-trump-starmer-carney.html",
+      "title": "World leaders descend on Beijing as 2026 kicks off , hedging against U . S . disruptions",
+      "seendate": "20260130T080000Z",
+      "socialimage": "https://image.cnbcfm.com/api/v1/image/108259303-1769730993384-gettyimages-2258194482-AFP_94DM9ZU.jpeg?v=1769731035",
+      "domain": "cnbc.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.coindesk.com/markets/2026/01/30/here-s-why-fed-contender-kevin-warsh-is-seen-as-bearish-for-bitcoin",
+      "url_mobile": "",
+      "title": "Here why Fed contender Kevin Warsh is seen as bearish for bitcoin",
+      "seendate": "20260130T064500Z",
+      "socialimage": "https://cdn.sanity.io/images/s3y3vcno/production/07762749bd0f905e9265bfb3dbbc737104b6ba12-1920x1080.jpg?auto=format&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "domain": "coindesk.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://insidebitcoins.com/news/bitcoin-fails-to-rally-as-jpmorgan-says-short-term-sentiment-overrides-dollar-weakness",
+      "url_mobile": "",
+      "title": "Bitcoin Fails to Rally Despite Dollar Weakness",
+      "seendate": "20260130T034500Z",
+      "socialimage": "https://insidebitcoins.com/wp-content/uploads/2025/11/jpmorgan-btc_optimized.jpg",
+      "domain": "insidebitcoins.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.rismedia.com/2026/01/29/mortgage-rates-hold-applications-down-this-week/",
+      "url_mobile": "",
+      "title": "Mortgage Rates Hold , Applications Down This Week",
+      "seendate": "20260130T013000Z",
+      "socialimage": "https://www.rismedia.com/wp-content/uploads/2025/11/mortgage_rates_11_6_25_iStock-1025416706.jpg",
+      "domain": "rismedia.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/blofin-research-analysis-market-outlook-130000178.html",
+      "url_mobile": "",
+      "title": "BloFin Research Analysis : Market Outlook 2026 Across Crypto Majors , Perp DEXs , and Forecasting Markets",
+      "seendate": "20260130T011500Z",
+      "socialimage": "https://s.yimg.com/os/en/beincrypto_us_662/bbfdc72ebb60ee4285de81bc64ebccc3",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://theeconomiccollapseblog.com/just-like-we-witnessed-during-the-great-recession-and-the-great-depression-economic-activity-is-slowing-down-all-around-us-as-chaos-breaks-out-in-the-financial-markets/",
+      "url_mobile": "",
+      "title": "Just Like We Witnessed During The Great Recession And The Great Depression , Economic Activity Is Slowing Down All Around Us As Chaos Breaks Out In The Financial Markets",
+      "seendate": "20260130T010000Z",
+      "socialimage": "http://theeconomiccollapseblog.com/wp-content/uploads/2026/01/Snip20260129_23.png",
+      "domain": "theeconomiccollapseblog.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

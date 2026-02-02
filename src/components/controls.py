@@ -1,14 +1,14 @@
-"""Control panel components for Dash application."""
+"""Dash 应用的控制面板组件。"""
 
 from dash import html, dcc
 from config.settings import load_series_config
 
 
 def create_time_range_buttons() -> html.Div:
-    """Create time range selection buttons.
+    """创建时间范围选择按钮。
     
     Returns:
-        Div containing button group for time range selection
+        包含时间范围选择按钮组的 Div
     """
     buttons = [
         {"label": "6个月", "value": "6m"},
@@ -33,10 +33,10 @@ def create_time_range_buttons() -> html.Div:
 
 
 def create_display_mode_toggle() -> html.Div:
-    """Create display mode toggle (absolute vs normalized).
+    """创建显示模式切换（绝对值 vs 归一化）。
     
     Returns:
-        Div containing radio buttons for display mode
+        包含显示模式单选按钮的 Div
     """
     modes = [
         {"label": "绝对值", "value": "absolute"},
@@ -58,10 +58,10 @@ def create_display_mode_toggle() -> html.Div:
 
 
 def create_series_checklist() -> html.Div:
-    """Create series selection checklist.
+    """创建系列选择复选框列表。
     
     Returns:
-        Div containing checkboxes for series selection
+        包含系列选择复选框的 Div
     """
     series_config = load_series_config()
     
@@ -70,7 +70,7 @@ def create_series_checklist() -> html.Div:
         for s in series_config
     ]
     
-    # Default to all series selected
+    # 默认选中所有系列
     default_values = [s["id"] for s in series_config]
     
     return html.Div([
@@ -87,10 +87,10 @@ def create_series_checklist() -> html.Div:
 
 
 def create_refresh_button() -> html.Div:
-    """Create data refresh button and status display.
+    """创建数据刷新按钮和状态显示。
     
     Returns:
-        Div containing refresh button and status text
+        包含刷新按钮和状态文本的 Div
     """
     return html.Div([
         html.Button(
@@ -112,10 +112,10 @@ def create_refresh_button() -> html.Div:
 
 
 def create_control_panel() -> html.Div:
-    """Create the complete control panel.
+    """创建完整的控制面板。
     
     Returns:
-        Div containing all control components
+        包含所有控制组件的 Div
     """
     return html.Div([
         html.H3("控制面板", style={"marginTop": "0", "marginBottom": "20px"}),

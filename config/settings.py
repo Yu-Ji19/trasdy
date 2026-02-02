@@ -1,23 +1,23 @@
-"""Configuration settings for Trasdy MVP."""
+"""Trasdy MVP 的配置设置。"""
 
 from pathlib import Path
 import yaml
 
 
 def get_project_root() -> Path:
-    """Get the project root directory."""
+    """获取项目根目录。"""
     return Path(__file__).parent.parent
 
 
 def get_api_key() -> str:
-    """Read FRED API key from file.
+    """从文件读取 FRED API 密钥。
     
     Returns:
-        str: The FRED API key
+        str: FRED API 密钥
         
     Raises:
-        FileNotFoundError: If FRED_API_KEY file doesn't exist
-        ValueError: If FRED_API_KEY file is empty
+        FileNotFoundError: 如果 FRED_API_KEY 文件不存在
+        ValueError: 如果 FRED_API_KEY 文件为空
     """
     key_file = get_project_root() / "secrets" / "FRED_API_KEY"
     
@@ -32,10 +32,10 @@ def get_api_key() -> str:
 
 
 def load_series_config() -> list[dict]:
-    """Load series configuration from YAML file.
+    """从 YAML 文件加载系列配置。
     
     Returns:
-        list[dict]: List of series configurations
+        list[dict]: 系列配置列表
     """
     config_file = get_project_root() / "config" / "series_config.yaml"
     

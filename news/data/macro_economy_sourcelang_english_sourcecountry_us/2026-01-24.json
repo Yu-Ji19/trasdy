@@ -1,0 +1,98 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-01-24",
+  "fetch_time": "2026-02-02T13:23:13.735653",
+  "article_count": 9,
+  "articles": [
+    {
+      "url": "https://www.insidermonkey.com/blog/webster-financial-corporation-nysewbs-q4-2025-earnings-call-transcript-1680780/",
+      "url_mobile": "",
+      "title": "Webster Financial Corporation ( NYSE : WBS ) Q4 2025 Earnings Call Transcript",
+      "seendate": "20260124T134500Z",
+      "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2023/10/07200537/WBS-insidermonkey-1696723534503.jpg",
+      "domain": "insidermonkey.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://reason.com/2026/01/24/how-to-build-your-own-internet-in-2026/",
+      "url_mobile": "",
+      "title": "How to build your own internet ( and escape the algorithm ) in 2026",
+      "seendate": "20260124T134500Z",
+      "socialimage": "https://d2eehagpk5cl65.cloudfront.net/img/q60/uploads/2026/01/01.23.26-v2.png",
+      "domain": "reason.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.insidermonkey.com/blog/associated-banc-corp-nyseasb-q4-2025-earnings-call-transcript-1680773/",
+      "url_mobile": "",
+      "title": "Associated Banc - Corp ( NYSE : ASB ) Q4 2025 Earnings Call Transcript",
+      "seendate": "20260124T134500Z",
+      "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2023/10/18203407/ASB-insidermonkey-1697675644863.jpg",
+      "domain": "insidermonkey.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.insidermonkey.com/blog/first-citizens-bancshares-inc-nasdaqfcnca-q4-2025-earnings-call-transcript-1680777/",
+      "url_mobile": "",
+      "title": "First Citizens BancShares , Inc . ( NASDAQ : FCNCA ) Q4 2025 Earnings Call Transcript",
+      "seendate": "20260124T134500Z",
+      "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2023/09/23154611/FCNCA-insidermonkey-1695498368734.jpg",
+      "domain": "insidermonkey.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://seekingalpha.com/article/4861602-how-to-build-your-perfect-portfolio-with-cullen-roche",
+      "url_mobile": "",
+      "title": "How To Build Your Perfect Portfolio With Cullen Roche",
+      "seendate": "20260124T073000Z",
+      "socialimage": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/628233112/image_628233112.jpg?io=getty-c-w1536",
+      "domain": "seekingalpha.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/01/23/palantir-billionaire-peter-thiel-sells-tesla-and-b/?source=iedfolrf0000001",
+      "url_mobile": "",
+      "title": "Palantir Billionaire Peter Thiel Sells Tesla and Buys This Consumer Electronics Stock Instead",
+      "seendate": "20260124T064500Z",
+      "socialimage": "https://g.foolcdn.com/editorial/images/852050/aapl.png",
+      "domain": "fool.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/palantir-billionaire-peter-thiel-sells-025000209.html",
+      "url_mobile": "",
+      "title": "Palantir Billionaire Peter Thiel Sells Tesla and Buys This Consumer Electronics Stock Instead",
+      "seendate": "20260124T034500Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/040IXW8Wa3PESNwlnE1J1w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MjA-/https://media.zenfs.com/en/motleyfool.com/019b715e2a5a0b310d54b621c82f523b",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/small-caps-notch-longest-win-210905299.html",
+      "url_mobile": "",
+      "title": "Small Caps Notch Longest Win Streak Over S & P 500 Since 1996",
+      "seendate": "20260124T033000Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/QHSQOc3tS2o3d0A8SXOnyw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD0xMDAz/https://media.zenfs.com/en/bloomberg_holding_pen_162/a08a61914add5331128057690636c422",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.webpronews.com/influencer-platforms-216-billion-surge-ai-and-creators-reshape-ad-dollars/",
+      "url_mobile": "",
+      "title": "Influencer Platform $216 Billion Surge : AI and Creators Reshape Ad Dollars",
+      "seendate": "20260124T031500Z",
+      "socialimage": "https://www.webpronews.com/wp-content/uploads/2026/01/article-7297-1769218108.jpeg",
+      "domain": "webpronews.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

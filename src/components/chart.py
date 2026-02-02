@@ -1,4 +1,4 @@
-"""Chart components for Dash application."""
+"""Dash 应用的图表组件。"""
 
 from dash import dcc, html
 import plotly.graph_objects as go
@@ -8,20 +8,20 @@ from config.settings import load_series_config
 
 
 def get_series_colors() -> dict[str, str]:
-    """Get color mapping for series.
+    """获取系列的颜色映射。
     
     Returns:
-        Dictionary mapping series_id to color
+        系列 ID 到颜色的字典映射
     """
     series_config = load_series_config()
     return {s["id"]: s["color"] for s in series_config}
 
 
 def get_series_names() -> dict[str, str]:
-    """Get name mapping for series.
+    """获取系列的名称映射。
     
     Returns:
-        Dictionary mapping series_id to display name
+        系列 ID 到显示名称的字典映射
     """
     series_config = load_series_config()
     return {s["id"]: s["name"] for s in series_config}
@@ -31,14 +31,14 @@ def create_chart_figure(
     data: dict[str, pd.DataFrame],
     display_mode: str = "absolute"
 ) -> go.Figure:
-    """Create Plotly figure from data.
+    """从数据创建 Plotly 图表。
     
     Args:
-        data: Dictionary mapping series_id to DataFrame with 'date' and 'value' columns
-        display_mode: 'absolute' or 'scale'
+        data: 系列 ID 到包含 'date' 和 'value' 列的 DataFrame 的字典映射
+        display_mode: 'absolute' 或 'scale'
         
     Returns:
-        Plotly Figure object
+        Plotly Figure 对象
     """
     colors = get_series_colors()
     names = get_series_names()
@@ -61,7 +61,7 @@ def create_chart_figure(
             hovertemplate="<b>%{x}</b><br>" + name + ": %{y:.2f}<extra></extra>"
         ))
     
-    # Configure layout
+    # 配置布局
     y_title = "值" if display_mode == "absolute" else "归一化值 (起始=100)"
     
     fig.update_layout(
@@ -90,7 +90,7 @@ def create_chart_figure(
         plot_bgcolor="white",
     )
     
-    # Enable zoom and pan
+    # 启用缩放和平移
     fig.update_xaxes(fixedrange=False)
     fig.update_yaxes(fixedrange=False)
     
@@ -98,10 +98,10 @@ def create_chart_figure(
 
 
 def create_empty_figure() -> go.Figure:
-    """Create an empty figure with placeholder message.
+    """创建带有占位消息的空图表。
     
     Returns:
-        Plotly Figure object
+        Plotly Figure 对象
     """
     fig = go.Figure()
     fig.add_annotation(
@@ -121,10 +121,10 @@ def create_empty_figure() -> go.Figure:
 
 
 def create_chart_component() -> html.Div:
-    """Create the chart component for the Dash layout.
+    """为 Dash 布局创建图表组件。
     
     Returns:
-        Div containing the chart
+        包含图表的 Div
     """
     return html.Div([
         dcc.Graph(

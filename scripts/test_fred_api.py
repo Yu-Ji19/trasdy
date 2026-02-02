@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test FRED API connectivity by fetching SP500 data."""
+"""通过获取 SP500 数据测试 FRED API 连接。"""
 
 import os
 import requests
@@ -7,8 +7,8 @@ from pathlib import Path
 
 
 def get_api_key() -> str:
-    """Read FRED API key from file."""
-    # Find project root (where FRED_API_KEY file is located)
+    """从文件读取 FRED API 密钥。"""
+    # 查找项目根目录（FRED_API_KEY 文件所在位置）
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
     key_file = project_root / "secrets" / "FRED_API_KEY"
@@ -24,7 +24,7 @@ def get_api_key() -> str:
 
 
 def fetch_sp500_data(api_key: str, limit: int = 10) -> list[dict]:
-    """Fetch recent SP500 data from FRED API."""
+    """从 FRED API 获取最近的 SP500 数据。"""
     url = "https://api.stlouisfed.org/fred/series/observations"
     params = {
         "series_id": "SP500",
@@ -44,19 +44,19 @@ def fetch_sp500_data(api_key: str, limit: int = 10) -> list[dict]:
 
 
 def main():
-    """Main function to test FRED API."""
+    """测试 FRED API 的主函数。"""
     print("Testing FRED API connection...")
     print("-" * 40)
     
-    # Get API key
+    # 获取 API 密钥
     api_key = get_api_key()
     print(f"API key loaded: {api_key[:4]}...{api_key[-4:]}")
     
-    # Fetch data
+    # 获取数据
     print("\nFetching SP500 last 10 observations...")
     observations = fetch_sp500_data(api_key, limit=10)
     
-    # Print results
+    # 打印结果
     print(f"\nReceived {len(observations)} records:")
     print("-" * 40)
     for obs in observations:

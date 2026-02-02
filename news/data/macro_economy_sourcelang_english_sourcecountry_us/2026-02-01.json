@@ -1,0 +1,128 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-02-01",
+  "fetch_time": "2026-02-02T13:24:07.050620",
+  "article_count": 12,
+  "articles": [
+    {
+      "url": "https://www.fool.com/investing/2026/02/01/a-weakening-dollar-is-sending-this-group-of-stocks/?source=iedfolrf0000001",
+      "url_mobile": "",
+      "title": "A Weakening Dollar Is Sending This Group of Stocks Sharply Higher . Should You Invest ? ",
+      "seendate": "20260201T200000Z",
+      "socialimage": "https://g.foolcdn.com/editorial/images/853605/gettyimages-2242757350.jpg",
+      "domain": "fool.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/predictstreet-2026-2-1-the-infofi-revolution-how-prediction-markets-became-the-worlds-fastest-financial-data-feed",
+      "url_mobile": "",
+      "title": "FinancialContent - The InfoFi Revolution : How Prediction Markets Became the World Fastest Financial Data Feed",
+      "seendate": "20260201T180000Z",
+      "socialimage": "https://news.predictstreet.ai/wp-content/uploads/2026/02/7a45510c-36fe-4a9a-9740-d4a7813981a8-1024x683.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/predictstreet-2026-2-1-the-selig-revolution-cftc-reclaims-the-prediction-market-frontier",
+      "url_mobile": "",
+      "title": "FinancialContent - The Selig Revolution : CFTC Reclaims the Prediction Market Frontier",
+      "seendate": "20260201T170000Z",
+      "socialimage": "https://news.predictstreet.ai/wp-content/uploads/2026/02/905595bb-195a-44d8-9c9d-50dd0489a4b0-1024x683.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/trump-named-warsh-lead-fed-172925211.html",
+      "url_mobile": "",
+      "title": "Right before Trump named Warsh to lead the Fed , Powell seemed to respond to some of his biggest complaints about the central bank",
+      "seendate": "20260201T090000Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/P4f2220De6GCeoTFcCXRng--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/fortune_175/c587620c168d63ccbdb590688c43cc2b",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.ruthfullyyours.com/2026/01/",
+      "url_mobile": "",
+      "title": "January | 2026 | RUTHFULLY YOURS",
+      "seendate": "20260201T073000Z",
+      "socialimage": "",
+      "domain": "ruthfullyyours.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.politico.eu/article/global-euro-eu-ambition-challenge-dollar/",
+      "url_mobile": "",
+      "title": "Europe wonders whether it can afford to take on the US dollar",
+      "seendate": "20260201T070000Z",
+      "socialimage": "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/01/29/GettyImages-2257776543.jpg",
+      "domain": "politico.eu",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.bignewsnetwork.com/news/278842242/president-murmu-offers-dahi-cheeni-to-fm-nirmala-sitharaman-before-presenting-budget-2026",
+      "url_mobile": "",
+      "title": "President Murmu offers  dahi - cheeni  to FM Nirmala Sitharaman before presenting Budget 2026",
+      "seendate": "20260201T051500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/495fc41/f7fd4fd9-077f-4f58-8e77-9f73431521e9/0/ANI-20260201041455-600x315.jpg",
+      "domain": "bignewsnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.bignewsnetwork.com/news/278842235/sp-chief-akhilesh-yadav-leaves-from-lucknow-residence-ahead-of-budget-presentation",
+      "url_mobile": "",
+      "title": "SP chief Akhilesh Yadav leaves from Lucknow residence ahead of Budget presentation",
+      "seendate": "20260201T051500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/683d812/341a971e-ece3-44e2-98f2-3b18d0277d13/0/ANI-20260201040851-600x315.jpg",
+      "domain": "bignewsnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.bignewsnetwork.com/news/278842168/finance-minister-nirmala-sitharaman-arrives-at-kartavya-bhawan-ahead-of-union-budget",
+      "url_mobile": "",
+      "title": "Finance Minister Nirmala Sitharaman arrives at Kartavya Bhawan ahead of Union Budget",
+      "seendate": "20260201T041500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/6c0e469/418788bf-4c71-42cb-a65e-b42fe24fa28e/0/ANI-20260201030433-600x315.jpg",
+      "domain": "bignewsnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.bignewsnetwork.com/news/278842166/nirmala-sitharaman-mos-pankaj-chaudhary-depart-for-kartavya-bhavan-ahead-of-union-budget-2026-presentation",
+      "url_mobile": "",
+      "title": "Nirmala Sitharaman , MoS Pankaj Chaudhary depart for Kartavya Bhavan ahead of Union Budget 2026 presentation",
+      "seendate": "20260201T041500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/70978e9/50168c51-9153-498a-9190-b4ac67d3a6b8/0/ANI-20260201025925-600x315.jpg",
+      "domain": "bignewsnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.bignewsnetwork.com/news/278842098/nirmala-sitharaman-to-present-union-budget-for-record-ninth-time",
+      "url_mobile": "",
+      "title": "Nirmala Sitharaman to present Union Budget for record ninth time",
+      "seendate": "20260201T024500Z",
+      "socialimage": "https://image.chitra.live/api/v1/wps/c908cbb/601623a7-51c5-4fa8-82ee-284673bbe97d/0/ANI-20260201012454-600x315.jpg",
+      "domain": "bignewsnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/lyondellbasell-lyb-q2-2025-earnings-184210742.html",
+      "url_mobile": "",
+      "title": "LyondellBasell ( LYB ) Q2 2025 Earnings Transcript",
+      "seendate": "20260201T013000Z",
+      "socialimage": "https://s.yimg.com/os/en/motleyfool.com/e48e86dda35543079ee2080fd9208b73",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

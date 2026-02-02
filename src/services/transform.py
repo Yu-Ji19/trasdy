@@ -1,4 +1,4 @@
-"""Data transformation functions."""
+"""数据转换函数。"""
 
 from datetime import date, timedelta
 from typing import Union
@@ -9,14 +9,14 @@ def normalize_to_scale(
     series: Union[list, pd.Series], 
     base_value: float = 100.0
 ) -> Union[list, pd.Series]:
-    """Normalize a series to a scale where the first value equals base_value.
+    """将序列归一化，使第一个值等于 base_value。
     
     Args:
-        series: The series to normalize (list or pandas Series)
-        base_value: The target value for the first element (default 100.0)
+        series: 要归一化的序列（列表或 pandas Series）
+        base_value: 第一个元素的目标值（默认 100.0）
         
     Returns:
-        Normalized series of the same type as input
+        与输入类型相同的归一化序列
     """
     if isinstance(series, pd.Series):
         if series.empty:
@@ -26,7 +26,7 @@ def normalize_to_scale(
             return series * 0 + base_value
         return (series / first_value) * base_value
     else:
-        # Handle list input
+        # 处理列表输入
         if not series:
             return series
         first_value = series[0]
@@ -36,19 +36,19 @@ def normalize_to_scale(
 
 
 def filter_by_range(df: pd.DataFrame, range_key: str) -> pd.DataFrame:
-    """Filter DataFrame by date range.
+    """按日期范围过滤 DataFrame。
     
     Args:
-        df: DataFrame with a 'date' column
-        range_key: One of '6m', '1y', '3y', '5y', 'all'
+        df: 包含 'date' 列的 DataFrame
+        range_key: '6m', '1y', '3y', '5y', 'all' 之一
         
     Returns:
-        Filtered DataFrame
+        过滤后的 DataFrame
     """
     if df.empty or range_key == "all":
         return df
     
-    # Map range keys to number of days
+    # 将范围键映射到天数
     range_days = {
         "6m": 180,
         "1y": 365,
@@ -60,16 +60,16 @@ def filter_by_range(df: pd.DataFrame, range_key: str) -> pd.DataFrame:
     if days is None:
         return df
     
-    # Get cutoff date
+    # 获取截止日期
     today = date.today()
     cutoff = today - timedelta(days=days)
     
-    # Ensure date column is in proper format
+    # 确保日期列格式正确
     df = df.copy()
     if not pd.api.types.is_datetime64_any_dtype(df["date"]):
         df["date"] = pd.to_datetime(df["date"]).dt.date
     
-    # Filter
+    # 过滤
     mask = df["date"] >= cutoff
     return df[mask].reset_index(drop=True)
 
@@ -79,15 +79,15 @@ def prepare_chart_data(
     range_key: str = "all",
     normalize: bool = False
 ) -> dict[str, pd.DataFrame]:
-    """Prepare data for charting.
+    """准备用于绘图的数据。
     
     Args:
-        data: Dictionary mapping series_id to DataFrame
-        range_key: Date range filter ('6m', '1y', '3y', '5y', 'all')
-        normalize: Whether to normalize values to scale of 100
+        data: 系列 ID 到 DataFrame 的字典映射
+        range_key: 日期范围过滤器（'6m', '1y', '3y', '5y', 'all'）
+        normalize: 是否将值归一化到 100 的比例
         
     Returns:
-        Dictionary mapping series_id to prepared DataFrame
+        系列 ID 到处理后 DataFrame 的字典映射
     """
     result = {}
     
@@ -96,11 +96,11 @@ def prepare_chart_data(
             result[series_id] = df
             continue
         
-        # Filter by range
+        # 按范围过滤
         filtered = filter_by_range(df, range_key)
         
         if normalize and not filtered.empty:
-            # Normalize values
+            # 归一化值
             filtered = filtered.copy()
             filtered["value"] = normalize_to_scale(filtered["value"])
         

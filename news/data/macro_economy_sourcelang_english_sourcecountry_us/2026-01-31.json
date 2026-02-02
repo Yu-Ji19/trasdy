@@ -1,0 +1,88 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-01-31",
+  "fetch_time": "2026-02-02T13:24:04.347711",
+  "article_count": 8,
+  "articles": [
+    {
+      "url": "https://www.zerohedge.com/markets/mainstream-expectations-hope-vs-potential-risk",
+      "url_mobile": "",
+      "title": "Mainstream Expectations : Hope Vs . Potential Risk",
+      "seendate": "20260131T224500Z",
+      "socialimage": "https://cms.zerohedge.com/s3/files/styles/16_9_max_700/public/2026-01/image-7%20%282%29.jpg?cba9d4e&itok=Pu8bfYsW",
+      "domain": "zerohedge.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fairobserver.com/economics/the-price-of-presence-and-the-new-gender-pay-gap/",
+      "url_mobile": "",
+      "title": "The Price of Presence and the New Gender Pay Gap",
+      "seendate": "20260131T164500Z",
+      "socialimage": "https://www.fairobserver.com/wp-content/uploads/2026/01/Gender-pay-gap.jpg",
+      "domain": "fairobserver.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/trump-announces-kevin-warsh-fed-153214039.html",
+      "url_mobile": "",
+      "title": "Trump Announces Kevin Warsh As Fed Chair Nominee Why Did Bitcoin Dump To $83 , 000 ? ",
+      "seendate": "20260131T160000Z",
+      "socialimage": "https://s.yimg.com/os/en/Benzinga/59097bad7c34029654136d8234eedf78",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.ruthfullyyours.com/2026/01/31/trump-hits-a-home-run-in-nominating-kevin-warsh-for-the-fed-the-man-despises-money-printing-and-runny-melted-currency-he-will-bring-us-a-reagan-economy-monica-showalter/",
+      "url_mobile": "",
+      "title": "Trump hits a home run in nominating Kevin Warsh for the Fed ? The man despises money - printing and runny , melted currency . He will bring us a Reagan economy . Monica Showalter",
+      "seendate": "20260131T124500Z",
+      "socialimage": "",
+      "domain": "ruthfullyyours.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.ruthfullyyours.com/2026/01/31/",
+      "url_mobile": "",
+      "title": "31 | January | 2026 | RUTHFULLY YOURS",
+      "seendate": "20260131T124500Z",
+      "socialimage": "",
+      "domain": "ruthfullyyours.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/why-your-2026-mortgage-renewal-could-jump-40--or-fall-by-20-143554068.html",
+      "url_mobile": "",
+      "title": "Why your 2026 mortgage renewal could jump 40 % or fall by 20 % ",
+      "seendate": "20260131T023000Z",
+      "socialimage": "https://s.yimg.com/ny/api/res/1.2/PFI5p1GAR7S2FxmguxuS7Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04NDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-11/c7acf7b0-abfa-11ef-adff-e3649ff719f2",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.financialsense.com/blog/21537/weeks-market-wrap-mega-cap-earnings-inflation-data-and-ai-driven-spending",
+      "url_mobile": "",
+      "title": "This Week Market Wrap : Mega - Cap Earnings , Inflation Data , and AI - Driven Spending",
+      "seendate": "20260131T023000Z",
+      "socialimage": "https://static.financialsense.com/styles/bli_16x9_100_custom_user_screen_lg_min_1x_mt/public/images/2025-05/markets-economy.jpg?itok=Rh5PAb0j&v=7",
+      "domain": "financialsense.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/carpenter-tech-crs-earnings-call-163118818.html",
+      "url_mobile": "",
+      "title": "Carpenter Tech ( CRS ) Earnings Call Transcript",
+      "seendate": "20260131T000000Z",
+      "socialimage": "https://s.yimg.com/os/en/motleyfool.com/e48e86dda35543079ee2080fd9208b73",
+      "domain": "finance.yahoo.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

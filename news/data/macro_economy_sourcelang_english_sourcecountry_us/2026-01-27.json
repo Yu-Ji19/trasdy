@@ -1,0 +1,178 @@
+{
+  "query": "macro economy sourcelang:english sourcecountry:us",
+  "date": "2026-01-27",
+  "fetch_time": "2026-02-02T13:23:29.907132",
+  "article_count": 17,
+  "articles": [
+    {
+      "url": "https://www.coloradocountycitizen.com:443/article/7637,texas-a-m-forest-service-pins-new-law-enforcement-investigator",
+      "url_mobile": "",
+      "title": "Texas A & M Forest Service pins new law enforcement investigator",
+      "seendate": "20260127T224500Z",
+      "socialimage": "https://static2.coloradocountycitizen.com/data/articles/xga-4x3-texas-a-m-forest-service-pins-new-law-enforcement-investigator-1769548652.jpg",
+      "domain": "coloradocountycitizen.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.benzinga.com/Opinion/26/01/50174876/what-the-feds-next-rate-cut-window-means-for-bank-stocks-and-homebuilders",
+      "url_mobile": "",
+      "title": "What The Fed Next Rate Cut Window Means For Bank Stocks And Homebuilders - Bank of America ( NYSE : BAC ), D . R . Horton ( NYSE : DHI ) ",
+      "seendate": "20260127T224500Z",
+      "socialimage": "https://cdn.benzinga.com/files/images/story/2026/01/27/unnamed-2.jpeg?&fit=crop",
+      "domain": "benzinga.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/01/27/first-bancorp-fbp-q4-2025-earnings-call-transcript/?source=iedfolrf0000001",
+      "url_mobile": "",
+      "title": "First BanCorp FBP Q4 2025 Earnings Call Transcript",
+      "seendate": "20260127T193000Z",
+      "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/b4204f36ed605fc54d4ba32e2cb31d1dd892afd6-800x450.jpg",
+      "domain": "fool.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-january-28-interest-rate-decision-jerome-powell/",
+      "url_mobile": "https://www.cbsnews.com/amp/news/federal-reserve-fomc-meeting-january-28-interest-rate-decision-jerome-powell/",
+      "title": "Federal Reserve meets Wednesday for its first interest rate decision of 2026 . Here what to expect . ",
+      "seendate": "20260127T174500Z",
+      "socialimage": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/01/13/bbafb722-b7b1-4137-90eb-cf8dfe523583/thumbnail/1200x630/eef2b50ecf5a8097d4dcddb0c402e4c6/powell4.jpg",
+      "domain": "cbsnews.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.businessinsider.com/goldman-sachs-stock-market-recession-economic-outlook-david-solomon-2026-1",
+      "url_mobile": "",
+      "title": "Goldman Sachs CEO Sees 20 % Recession Odds , Warns of Market  Speed Bumps  ",
+      "seendate": "20260127T170000Z",
+      "socialimage": "https://i.insider.com/6978bcb5d3c7faef0eccf8c1?&format=jpeg",
+      "domain": "businessinsider.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-1-27-the-pessimistic-spender-what-upcoming-earnings-from-target-and-costco-will-reveal-about-a-fractured-american-consumer",
+      "url_mobile": "",
+      "title": "FinancialContent - The Pessimistic Spender : What Upcoming Earnings from Target and Costco Will Reveal About a Fractured American Consumer",
+      "seendate": "20260127T160000Z",
+      "socialimage": "https://marketminute.ghost.io/content/images/size/w1200/2026/01/47262bf9-d52e-44a4-a7e8-b48f415bc77f.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-1-27-steeled-for-transition-a-deep-dive-analysis-of-steel-dynamics-stld",
+      "url_mobile": "",
+      "title": "FinancialContent - Steeled for Transition : A Deep - Dive Analysis of Steel Dynamics ( STLD ) ",
+      "seendate": "20260127T160000Z",
+      "socialimage": "https://news.finterra.ai/wp-content/uploads/2026/01/cb3aba9b-560f-4714-82f5-21cc67e929ef-1024x683.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-1-27-tech-tumble-nasdaq-posts-worst-month-since-april-2024-as-inflation-and-tariffs-weigh-on-markets",
+      "url_mobile": "",
+      "title": "FinancialContent - Tech Tumble : Nasdaq Posts Worst Month Since April 2024 as Inflation and Tariffs Weigh on Markets",
+      "seendate": "20260127T154500Z",
+      "socialimage": "https://marketminute.ghost.io/content/images/size/w1200/2026/01/da1f1511-fdf5-4775-866c-9f890bb79223.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-1-27-american-airlines-aal-navigating-the-centennial-strategic-correction",
+      "url_mobile": "",
+      "title": "FinancialContent - American Airlines ( AAL ): Navigating the Centennial Strategic Correction",
+      "seendate": "20260127T154500Z",
+      "socialimage": "https://news.finterra.ai/wp-content/uploads/2026/01/c7271a08-18f6-4a6d-9cdf-55ecf7c5596e-1024x683.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-1-27-navigating-the-open-internet-a-deep-dive-analysis-of-the-trade-desk-ttd-in-2026",
+      "url_mobile": "",
+      "title": "FinancialContent - Navigating the Open Internet : A Deep - Dive Analysis of The Trade Desk ( TTD ) in 2026",
+      "seendate": "20260127T151500Z",
+      "socialimage": "https://news.finterra.ai/wp-content/uploads/2026/01/7852f0ff-46ab-4cfc-b7c4-24104232e451-1024x683.png",
+      "domain": "markets.financialcontent.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.floydct.com/online_features/press_releases/global-m-a-poised-to-sustain-momentum-in-2026-after-great-rebound-finds-bain-company/article_92e7ce74-5d19-53f2-8ae0-817f1d09c1fd.html",
+      "url_mobile": "",
+      "title": "Global M & A poised to sustain momentum in 2026 after great rebound , finds Bain & Company",
+      "seendate": "20260127T120000Z",
+      "socialimage": "https://bloximages.chicago2.vip.townnews.com/floydct.com/content/tncms/assets/v3/editorial/5/ba/5baf74f2-1c3f-5b41-9ae4-348a8838c92e/68c11f9ad1446.image.jpg?crop=1335%2C701%2C82%2C0",
+      "domain": "floydct.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://dominicanrepublicpost.com/us-dollar-wounded-hegemon-or-secure-as-most-powerful-currency-on-earth/",
+      "url_mobile": "",
+      "title": "US dollar :  Wounded hegemon  or secure as most powerful currency on earth ? - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+      "seendate": "20260127T090000Z",
+      "socialimage": "https://dominicanrepublicpost.com/app/uploads/2026/01/2025-01-31T111441Z_440949616_RC2UB2AOABN0_RTRMADP_3_USA-TRUMP-TARIFFS-FOREX-1738663519-VT02lw.jpg",
+      "domain": "dominicanrepublicpost.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.insidermonkey.com/blog/11-best-inexpensive-stocks-to-buy-now-1678943/",
+      "url_mobile": "https://www.insidermonkey.com/blog/11-best-inexpensive-stocks-to-buy-now-1678943/?amp=1",
+      "title": "11 Best Inexpensive Stocks to Buy Now - Insider Monkey",
+      "seendate": "20260127T074500Z",
+      "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2023/11/14184809/VONG-insidermonkey-1700005686304.jpg",
+      "domain": "insidermonkey.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.mondaq.com:443/unitedstates/corporate-and-company-law/1735884/market-analysis-10-trends-affecting-global-private-markets-for-2026",
+      "url_mobile": "",
+      "title": "Market Analysis : 10 Trends Affecting Global Private Markets For 2026",
+      "seendate": "20260127T070000Z",
+      "socialimage": "http://www.mondaq.com/images/profile/companythumb/478.webp?v=20240325132215",
+      "domain": "mondaq.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://bravenewcoin.com/insights/gold-and-silver-hit-new-all-time-highs-is-bitcoin-next",
+      "url_mobile": "",
+      "title": "Gold and Silver hit new All time Highs , Is Bitcoin Next ? ",
+      "seendate": "20260127T061500Z",
+      "socialimage": "https://bravenewcoin.com/wp-content/uploads/2026/01/903b2a08-c1f3-40e9-b3a5-7b2144bfe071-md.jpg",
+      "domain": "bravenewcoin.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://bravenewcoin.com/insights/bitcoin-btc-price-prediction-112k-in-focus-if-flag-breakout-holds-above-key-resistance",
+      "url_mobile": "",
+      "title": "Bitcoin ( BTC ) Price Prediction : $112K in Focus if Flag Breakout Holds Above Key Resistance",
+      "seendate": "20260127T011500Z",
+      "socialimage": "https://bravenewcoin.com/wp-content/uploads/2026/01/Bnc-Jan-27-2557.jpg",
+      "domain": "bravenewcoin.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://smallcapnetwork.com/banner_articles/north-american-markets-climb-as-tech-earnings-shine-and-small-caps-extend-winning-streak/",
+      "url_mobile": "",
+      "title": "North American Markets Climb as Tech Earnings Shine and Small Caps Extend Winning Streak",
+      "seendate": "20260127T001500Z",
+      "socialimage": "",
+      "domain": "smallcapnetwork.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    }
+  ]
+}

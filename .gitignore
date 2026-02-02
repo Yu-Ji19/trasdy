@@ -19,5 +19,5 @@ venv/
 .vscode/
 
 # Data (too large to commit)
-data/raw/*.csv
+data/index_data/*.csv
 data/metadata.json
