@@ -154,3 +154,10 @@ EOF
 [15:07:58] 🟢 TOKENS: 21715 / 80000 (27%) [read:81KB write:0KB assist:0KB shell:0KB]
 [15:08:10] 🟢 SHELL ls -la news/data/ → exit 0
 [15:08:13] 🟢 SHELL git status -sb && git diff → exit 0
+[15:08:19] 🟢 SHELL git add RALPH_TASK.md .ralph/progress.md .ralph/activity.log && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+ralph: mark news processing criteria complete and log progress
+
+EOF
+)" → exit 0
+[15:08:24] 🟢 SHELL git status -sb → exit 0
+[15:08:28] 🟢 TOKENS: 21715 / 80000 (27%) [read:81KB write:0KB assist:0KB shell:0KB]
