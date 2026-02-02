@@ -21,7 +21,7 @@ test_command: "ls -la news/data/"
 1. [x] 确认输出目录 `news/data/` 存在，不存在则创建
 
 ### Phase 2: 处理 2026-01-24
-1. [ ] 读取 `news/meta_data/macro_economy/2026-01-24.json`，获取 articles 列表
+1. [x] 读取 `news/meta_data/macro_economy/2026-01-24.json`，获取 articles 列表
 2. [ ] 逐条处理文章：获取内容、判断分类(宏观经济/国家政策/地缘政治)、生成摘要(<100字)、生成分析(<50字)
 3. [ ] 保存结果到 `news/data/2026-01-24.json`，格式符合规范
 
