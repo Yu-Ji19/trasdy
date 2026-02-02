@@ -26,7 +26,7 @@ test_command: "ls -la news/data/"
 3. [x] 保存结果到 `news/data/2026-01-24.json`，格式符合规范
 
 ### Phase 3: 处理 2026-01-25
-1. [ ] 读取 `news/meta_data/macro_economy/2026-01-25.json`，获取 articles 列表
+1. [x] 读取 `news/meta_data/macro_economy/2026-01-25.json`，获取 articles 列表
 2. [ ] 逐条处理文章：获取内容、判断分类、生成摘要(<100字)、生成分析(<50字)
 3. [ ] 保存结果到 `news/data/2026-01-25.json`，格式符合规范
 
